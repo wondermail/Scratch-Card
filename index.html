@@ -1,15 +1,27 @@
-<!DOCTYPE html>
-<html lang="en" >
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="theme-color" content="#517539">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">          
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<head>
-  <meta charset="UTF-8">
-  <title>HTML5 Canvas - Scratch Card</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/c890a4cc-604d-40c1-aa05-0c17a00220c5.png"/>
+
+    <meta property="og:title" content="Your Chaayos Bill">
+    <meta property="og:url" content="https://wondermail.github.io/CHAAYOS/">
+    <meta property="og:description" content="View your Chai Bill">
+    <meta property="og:image" content="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/4f403c73-3efc-4fa3-a341-c243c60c1724.png">
+    <meta property="og:type" content="article">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<style type="text/css">
-  body {
-  padding: 20px 0;
-}
+    
+
+<style>
 
 .container {
   border: 3px solid yellow;
@@ -33,14 +45,345 @@
   padding: 20px;
 }
 
+
+.navbar {
+  max-height:70px 
+}
+ul {
+  list-style-type: none;
+}
+.fa-phone{
+  color: #5E7E47;
+}
+.btn-primary {
+  background-color: #0076bc;
+  border-color: #0076bc;
+}
+.btn-outline-primary {
+  border-color: #0076bc;
+  color: #0076bc;
+}
+.fa-envelope{
+  color: #5E7E47;  
+}
+     body {
+  background-color: #eeeeee;
+  font-family: lato;
+  font-size: 15px;
+}
+.jumbotwo{
+  margin-top: -20px;
+  background-color: white;
+}
+.insidejumbotwo {
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+.insidejumbotwo4 {
+  margin-top: -20px;
+  margin-bottom: -35px;
+}
+  .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.headerdown{
+  margin-top: 80px;
+}
+.fa-coins{
+  color: #E18605;
+  font-size: 20px
+}
+.fa-arrow-right{
+font-size: 13px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+font-size: 13px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+font-size: 13px;
+}
+
+::placeholder {
+  color: #999999;
+}
+
+.jumboone {
+  background-color: white;
+  margin-top: -20px;
+}
+.jumboone89 {
+  background-color: white;
+  margin-top: -34px;
+  border: 1px #5E7E47 solid;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.jumboone55{
+  background-color: #5E7E47;
+  margin-top: -20px;
+  padding-bottom: 12px; 
+  margin-right: 8px;
+  margin-left: 8px;   
+}
+.jumboone12 {
+  background-color: white;
+  margin-top: -20px;
+  padding-bottom: 20px;
+  padding-top: 28px;
+}
+.fa-thumbs-up{
+  color: #0076bc;
+    font-size: 2.5em;
+}
+.jumboone123 {
+  background-color: white;
+  margin-top: -16px;
+  padding-bottom: 0px;
+  padding-top: 28px;
+}
+
+
+.fa-newspaper{
+  color: #5E7E47;
+}
+.fa-briefcase-medical{
+  color: #3EB056;  
+}
+
+.jumboone4 {
+  background-color: white;
+  margin-top: -20px;
+  padding-top: 0px; 
+  padding-bottom: 0px;
+}
+.fa-share-alt{
+  color: #5E7E47;
+}
+.insidejumboone {
+  margin-top: -20px;
+  margin-bottom: -20px; 
+}
+.insidejumboone12 {
+  margin-top: -20px;
+  margin-bottom: -20px; 
+}
+.fa-chevron-circle-right{
+  color:black;
+}
+.fa-chevron-circle-right{
+  color: #5E7E47;
+}
+.fa-comments{
+  color: yellow;
+}
+ a{
+      text-decoration: none  !important;
+      }
+      a:visited {
+            color: #5E7E47;
+        }
+      a:link {
+            color: #5E7E47 /*#ff790b*/;
+        }
+      a:hover {
+            color: #5E7E47/* #ff790b*/;
+        }
+      a:active {
+            color: #5E7E47 /*#ff790b*/;
+        }
+.rotate90{
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Safari 3-8 */
+  transform: rotate(10deg);
+}        
+/*Carousel CSS*/
+    }
+    .tdsizing{
+      width: 1px;
+    }
+    .bgwhite{
+        background: white;
+    }
+    .margin{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+/*Rate Stars CSS*/
+div.ratestars {
+ display:block;
+ text-align:left;
+ direction: rtl;
+}
+input.ratestars { display: none; }
+label.ratestars {
+  box-sizing:border-box;
+  padding:0;
+  font-size: 36px;
+   color:#009141;
+  margin:0;
+margin-left: 5px;
+}
+input.ratestars:checked ~ label.ratestars:before {
+  content: '★';
+ }
+.ratestars input.star-50:checked ~ label.ratestars:before {
+  color:#009141;
+  /*text-shadow: 0 0 20px #952;*/
+}
+.ratestars input.star-11:checked ~ label.ratestars:before { color: #F62; }
+label.ratestars:before {
+  content: '☆';
+}
+/*Rate Stars CSS End*/
+  .adbar-hor-small
+{
+  display:flex;
+  flex-direction:row;
+  overflow-x:scroll;
+  padding-left: 10px;
+  margin-left: -20px;
+  margin-right: -15px;
+}
+.adbar-hor-small table
+{
+  display:inline;
+}
+.btn-info {
+  background-color: #0076BC;
+  color: white;
+  border-color: #0076BC; 
+.backgrounddiv{
+    background: white;
+    padding-bottom: 15px;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+.tdheight{
+  height: 244px;
+  width: 200px;
+}
+        .uhjk{
+            width: 20px;
+/*            height: 50px;*/
+        }
+.borderss{
+  border-left: 7px solid white;
+}
+.movethisup{
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.fa-file{
+  color: white;
+}
+  .horizontal{
+        border-bottom: 1px #d1d1d1 solid;
+      }
+.vertical{
+        border-right: 1px #d1d1d1 solid;
+        border-bottom: 1px #d1d1d1 solid; 
+      }
+.fa-comments{
+  color: red;
+}
+            .top{
+        border-top: 1px #d1d1d1 solid;
+      }
+      .fa-arrow-right{
+        color: #0076bc ;
+      }
+
+.fa-info-circle{
+  color: red;
+}
+
+
+.fa-utensils{
+  color: #8D4D05;
+}
+/*Carousel CSS Ends Here*/
 </style>
-</head>
 
-<body>
 
-  <!--
-https://github.com/andreruffert/scratchie.js
--->
+
+  <title>Your Chaayos Bill</title>
+  </head>
+  <body>
+
+
+
+
+
+  <!-- Nav Bar -->
+
+    <!-- Image and text -->
+  <nav class="navbar navbar-light fixed-top border-bottom noselect " style="background-color: white">
+    <a class="navbar-brand" href="https://wondermail.github.io/CHAAYOS/">
+    <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/84e92d16-1db5-42b2-99b5-56ab165753f4.png" width="100" alt="" style="margin-top: -18px; margin-left:-5px;">
+  </a>
+  <form class="form-inline" style="margin-left: -10px;">
+<!--     <p class="my-2 my-sm-0">Search</p><br> -->
+    <ul><a href="tel:011-45797234" target="_top">
+      <li style="line-height: 18px; font-size: 15px; color: #767676; font-weight: 700">Contact Store</li>
+      <li style="line-height: 18px; font-size: 15px; color: #5E7E47; font-weight: 700; margin-left: -15px;"><i class="fas fa-phone fa-flip-horizontal"></i> 1800 120 2424</li>
+      <li style="line-height: 18px; font-size: 15px; color: #767676">SDA Market</li></a>
+    </ul>
+
+  </form>
+  </nav>
+
+
+  <!-- Nav Bar Ends Here -->
+
+
+  <!-- Section 1 -->
+
+      <div class="jumbotron jumbotron-fluid jumbotwo headerdown border-bottom noselect">
+      <div class="container">
+      <div class="insidejumbotwo">
+        <p style="font-size: 15px; margin-top: -5px">
+        Dear Aamer,<br><br>
+        Thanks for ordering at Chaayos! Please find enclosed your purchase bill for amount ₹160, generated on 13-05-2019.
+        </p>
+        <hr style="width: 98%">
+
+        <div style="text-align: center; margin-top: -5px;">
+        <a href="ChaayosBill.pdf">
+        <button type="button" class="btn btn-success" style="background-color: #5E7E47; width: 140px; border-color: #5E7E47"><i class="fas fa-file"></i> <span style="padding-left: 5px;">VIEW BILL</span></button></a>
+
+        <a href="mailto:?subject=My Chaayos Bill&body=Hey,%0D%0A%0D%0AHere is my Chaayos bill dated 13/05/2019 for Rs 160. To view bill, please click: https://wondermail.github.io/CHAAYOS/ChaayosBill.pdf" target="_top">
+        <button type="button" class="btn btn-outline-success" style="margin-left: 20px; color: #5E7E47; border-color: #5E7E47; width: 140px;"><i class="far fa-envelope"></i> <span style="padding-left: 5px; ">EMAIL BILL</span></button></a>
+
+
+<!-- Email Bill Button -->
+
+<!--         <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 20px; color: #5E7E47; border-color: #5E7E47; width: 140px;"><i class="far fa-envelope"></i> <span style="padding-left: 5px; ">EMAIL BILL</span></button> -->
+
+
+
+
+<!-- For Share Bill On Android:          -->
+<!--         <button type="button" class="btn btn-outline-success  share-btn" style="margin-left: 20px; color: #5E7E47; border-color: #5E7E47; width: 140px;"><i class="fas fa-share-alt"></i> <span style="padding-left: 5px; ">SHARE BILL</span></button> -->
+        </div>
+
+
+
+      </div>
+  </div>
+    </div>
+
+
+
+  <!-- Section 1 Ends Here -->
+
 
 <div class="container" id="js-container">
   <canvas class="canvas" id="js-canvas" width="300" height="300"></canvas>
@@ -57,11 +400,484 @@ https://github.com/andreruffert/scratchie.js
     </div>
   </form>  
 </div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <!-- Forward Email Modal -->
 
+    <!-- Forward Email MODAL -->
+  <div class="modal fade modal-kj" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="en">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Forward Bill</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Enter Email ID:</label>
+            <input type="email" class="form-control" id="recipient-name" placeholder="abc@xyz.com">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Forward</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Forward Email Modal Ends Here -->
+
+<!-- Section 7 -->
+
+
+    <!--     <table  class="border-bottom" style="  background-color: white; margin-top: -20px; padding-bottom: 20px; padding-top: 28px; margin-bottom: 32px">
+          <tr>
+            <td height="100" width="300" style="vertical-align: center">
+              <span style="padding-left: 20px; color: black; font-size: 16px;">You are 3 Chai away from</span><br>
+              <span style="padding-left: 20px; color: black; font-size: 20px; color: #8D4D05; font-weight: 700">A FREE CHAI!</span></td>
+            <td width="120" height="100" >
+            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/e6728793-9064-4e70-bf9f-2a6f6f7655ee.png" width="100%" height="100%">              
+            </td>
+          </tr>
+        </table> -->
+
+
+  <!-- Section 7 Ends Here -->
+
+  <!-- Section 7 -->
+
+
+        <table  class="border-bottom noselect" style="  background-color: white; margin-top: -20px; padding-bottom: 20px; padding-top: 28px; margin-bottom: 32px">
+          <tr>
+            <td width="120" height="100" >
+            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/e6728793-9064-4e70-bf9f-2a6f6f7655ee.png" width="100%" height="100%">              
+            </td>
+            <td height="100" width="300" style="vertical-align: left; padding-left: 15px">
+              <span style="color:  #8D4D05; font-size: 20px; font-weight: 700">3 more to go!</span><br>
+              <span style="color: black; font-size: 15px; font-weight: 400">Total Loyalty points: <strong><span style="color:  #8D4D05">30</span></strong>. <br>You are <i>"three"</i> Chai away from a FREE Chai</span><u><i><span style="margin-left: 5px; color: blue;" data-toggle="modal" data-target="#loyaltymodal" data-whatever="@mdo">T&C</span></i></u><br>
+          </td>
+
+            
+              
+
+
+
+
+
+          </tr>
+        </table>
+
+
+  <!-- Section 7 Ends Here -->
+
+  <!-- Section 2 Feedback -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone55 border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone" style="padding-bottom: 10px;">
+        
+        <h6 style="font-size: 18px; font-weight: 700; "><span style="color: white"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/ba7f4d1e-ac7f-4ca6-a919-7052fb7240bb.png" width="40px" style="float:left;margin-right:10px"> Your feedback is highly<br> appreciated</span></h6>
+        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/947e8029-06c3-4341-b34d-6a3e47360883.png" width="50" class="float-right" style="margin-top: -55px">
+
+
+
+<!-- Table  -->
+     <!--    <table >
+          <tr>
+            <td width="60px;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/ba7f4d1e-ac7f-4ca6-a919-7052fb7240bb.png" width="40px"></td>
+            <td width="320px;"><span style="color: white; font-size: 18px; font-weight: 700"> Rate your Chaayos experience</span>
+            </td>
+            <td width="80px;">        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/947e8029-06c3-4341-b34d-6a3e47360883.png" width="50px" align="right"></td>           
+          </tr>
+
+
+                    <tr>
+            <td width="60px;" style="vertical-align: top"></td>
+            <td width="320px;" style="text-align: top"><span style="color: white; font-size: 12px; "> Help us make it flawless for you!</span>
+            </td>
+            <td width="80px;" style="vertical-align: top"></td>           
+          </tr>
+        </table> -->
+<!-- Table Ends -->
+
+
+
+      </div>
+      </div>
+    </div>
+
+
+
+        <div class="jumbotron jumbotron-fluid jumboone89  noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+      <form>
+
+        <p style="margin-bottom: 8px;"><strong>1. How would you rate the friendliness of our staff?</strong></p>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline100" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline100">Extremely satisfied</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline101" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline101">Satisfied</label>
+        </div>        
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline102" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline102">Dissatisfied</label>
+        </div>
+<!--         <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline103" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline103">More than 30 mins</label>
+        </div>   --> 
+
+        <!-- 2nd Question -->             
+
+<!--         <p style="margin-bottom: 8px; margin-top: 20px;"><strong>2.  How do you rate behavior & capability of the pathologist?</strong></p>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline12" name="customRadioInline145" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline12">Good</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline13" name="customRadioInline145" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline13">Satisfactory</label>
+        </div>        
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline14" name="customRadioInline145" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline14">Needs Improvement</label>
+        </div>
+ -->      </form>
+
+      <!-- 2nd Question Ends -->
+
+       <!-- 3rd Question -->             
+
+        <p style="margin-bottom: -10px; margin-top: 20px;"><strong>2.  How do you rate your overall Chaayos experience?</strong></p>
+        <p style="margin-bottom: -5px; margin-top: 10px; font-size: 10px">(Food quality, Store Hygiene, Waiting Time, Value for money)</p>
+
+
+        <!-- Star Rating -->
+<div class="ratestars ">
+    <input value="5" class="ratestars star-5" id="star-5" type="radio" name="star">
+    <label class="ratestars star-5" for="star-5"></label>
+    <input value="4" class="ratestars star-4" id="star-4" type="radio" name="star">
+    <label class="ratestars star-4" for="star-4"></label>
+    <input value="3" class="ratestars star-3" id="star-3" type="radio" name="star">
+    <label class="ratestars star-3" for="star-3"></label>
+    <input value="2" class="ratestars star-2" id="star-2" type="radio" name="star">
+    <label class="ratestars star-2" for="star-2"></label>
+    <input value="1" class="ratestars star-1" id="star-1" type="radio" name="star">
+    <label class="ratestars star-1" for="star-1"></label>
+  </div>
+  <textarea  style="min-width: 85%" id="exampleFormControlTextarea1" class="pl" rows="3" placeholder=" Tell us what we could be doing better"></textarea><p></p>
+  <input class="btn btn-info btn-md" type="submit" value="Submit Feedback" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">
+
+</div>
+<!-- Star Rating End -->
+
+
+
+
+      </form>
+
+      <!-- 3rd Question Ends -->
+
+
+<!--         <p style="font-size: 15px; margin-top: -5px">We love you Bagmishree!</p>       -->
+
+      </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  <!-- Section 2 Feedback Ends Here -->
+
+
+ <!-- Section 8 -->
+
+<!-- 
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+          <table width="100%" >
+        <tr>
+            <td style="text-align: left; background-color: #fafafa" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/83e37b4e-2573-454a-8f14-b786240ee8ac.png" width="100%" ></td>
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> Order on Zomato</span><br>
+            <span style="font-size: 15px; ">Get 10% off & free bun maska on all orders above Rs 299</span><br>
+            <span style="color: #5E7E47; font-weight: 700; font-size: 15px">Order Now <i class="fas fa-chevron-circle-right"></i></span>
+            </td>
+        </tr>
+    </table>
+
+
+      </div>
+      </div>
+    </div> -->
+
+  <!-- Section 8 Ends Here -->
+
+ <!-- Section 8 -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+          <table width="100%" >
+        <tr>
+            <td style="text-align: left" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/c3f5f69d-19f2-45e4-9890-4f98c3bf6e0b.png" width="75px" class="rotate90"></td>
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> Chaayos Gift Card</span><br>
+            <span style="font-size: 15px; ">Get 10% addtional value on<br> recharge of Rs 500. Go cashless!</span><br>
+            <span style="color: #5E7E47; font-weight: 700; font-size: 15px">Buy Now <i class="fas fa-chevron-circle-right"></i></span>
+            </td>
+        </tr>
+    </table>
+
+
+      </div>
+      </div>
+    </div>
+
+  <!-- Section 8 Ends Here -->
+   <!-- Section 8 -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+          <table width="100%" >
+        <tr>
+<!--             <td style="text-align: left; background-color: #fafafa" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/58a0725a-ad79-4a58-a59b-86ebb1ecf282.png" width="80px" class="rounded-circle"></td> -->
+                        <td style="text-align: left" width="85px;" height="85px;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/58a0725a-ad79-4a58-a59b-86ebb1ecf282.png" width="80px" class="rounded-circle"></td>
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> Order Online</span><br>
+            <span style="font-size: 15px; ">Get your favorite food delivered<br> to your home</span><br><a href="https://www.chaayos.com">
+            <span style="color: #5E7E47; font-weight: 700; font-size: 15px"><i class="fas fa-utensils" style="color: #5E7E47"></i> Order Now</a>
+             <!-- <i class="fas fa-chevron-circle-right"></i> --></span>
+            <span style="color: #5E7E47; font-weight: 700; font-size: 15px; margin-left: 25px;"><i class="fas fa-file-alt"></i> View Menu</span>             
+            </td>
+        </tr>
+    </table>
+
+
+      </div>
+      </div>
+    </div>
+
+  <!-- Section 8 Ends Here -->
+
+
+
+
+  <!-- Section 5 -->
+
+ <!-- Ad -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone4 border-bottom noselect">
+<!--       <div class="container"> -->
+<!--       <div class="insidejumboone">
+ -->
+
+        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/3fa36cd2-5079-4573-b9c7-8184bbae2c0b.jpg" width="100%">
+
+
+
+
+<!--       </div> -->
+<!--       </div> -->
+    </div>
+
+  <!-- Section 5 Ends Here -->
+
+
+    <!-- Section 3 -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+          <table width="100%" >
+        <tr>
+            <td style="text-align: left" width="85px;" height="85px;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/0cbd96d4-0b1c-4ef6-bc34-5bbffab9c744.png" width="80px" class="rounded-circle"></td>
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> Find Your Chaayos</span><br>
+            <span style="font-size: 15px;">Whatever you're looking for,<br>we've got just the place.</span><br>
+            <span style="color: #5E7E47; font-weight: 700; font-size: 15px"><a href="https://www.google.com/maps/search/Chaayos/">Get Directions </a><i class="fas fa-chevron-circle-right"></i></span>
+            </td>
+        </tr>
+    </table>
+
+
+      </div>
+      </div>
+    </div>
+
+  <!-- Section 3 Ends Here -->
+
+
+
+
+<!-- Section 6 Blog Starts Here -->
+<a href="https://www.livemint.com/Companies/3akE3dA7MGg2ip5RGZQYoN/How-Chaayos-got-its-brew-right.html">
+<div class="jumbotron jumbotron-fluid jumbotwo border-bottom noselect">
+      <div class="container">
+      <div class="insidejumbotwo">
+        <h6 style="font-size: 18px; font-weight: 700"><i class="fas fa-newspaper"></i> In The News</h6>
+<!--         <p style="font-size: 15px; margin-top: -5px">I know this doesn't make sense, anyway</p> -->
+
+        <div class="border rounded">
+        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/5cde0edc-33e5-4835-a813-5e488d719980.png" width="100%">
+        <br>
+        <h6 style="font-size: 16px; margin-top: 15px; padding-left: 5px; padding-right: 3px; color:black; font-weight: 700">Read: How Chaayos Got Its Brew Right</h6>
+        <p style="font-size: 13px; margin-top: -5px; padding-left: 5px; padding-right: 3px; color:black">Our option of 12 add-ons gives our customers a total of over 12,000 ways to make their chai at Chaayos...</p>
+        <p style="font-size: 8px;color: #0076BC; margin-top: -15px; padding-left: 5px; ">Jan 3, 2018</p>
+        </div></a>
+
+
+
+
+
+
+
+
+
+
+              </div>
+  </div>
+    </div>
+
+
+<!-- Section 6 Blog Ends Here -->
+
+
+ 
+
+ <!-- Section 9 -->
+
+
+   <!--  <div class="jumbotron jumbotron-fluid jumboone12 border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone"> -->
+        
+<div class="jumboone123 noselect">        
+       <table class="jumbotron jumbotron-fluid border-bottom" style="background: white; margin-top: -32px;">
+      <tr>
+        <td height="50" width="200" class="border-right" align="center">
+          <i class="fas fa-phone fa-flip-horizontal"></i> 
+          <a href="tel:1800 120 2424" target="_top">
+            <span style="color: black">Call Us</span>
+        </td></a>
+        <td align="center" width="200">
+        <a href="mailto:letstalk@chaayos.com?Subject=Hello" target="_top">
+          <i class="far fa-envelope"></i><span style="color: black"> Email Us</a></span>
+        </td>
+      </tr>
+    </table>
+</div>
+
+  <!-- Section 9 Ends Here -->
+
+
+  <!-- Modal Information Loyalty Points -->
+
+  <div class="modal" tabindex="-1" role="dialog" id="loyaltymodal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+<!--       <div class="modal-header">
+        <h5 class="modal-title">Earning is simple!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body">
+        <p>
+          For each visit, Customer will be awarded 10 points. The accumulated 60 points under the Program can be redeemed by the Customer for a free "Regular Desi Chai" at any Chaayos store in India. Please note that a Single member can only store a maximum of 300 points under the Loyaltea program from the date of the commencement of Loyaltea Program by Sunshine Teahouse. <a href="https://www.chaayos.com/terms">Read More</a>
+<!--         <span style="font-weight: 700; font-size: 13px;">1. 100 points:</span> Enrolment comes with a Welcome Bonus!<br>
+        <span style="font-weight: 700; font-size: 13px;">2. 50 points: </span>Registering on Mobile App/Portal = earning points<br>
+        <span style="font-weight: 700; font-size: 13px;">3. 10%: Earnin</span>g points for all your spends at SRL diagnostics<br>
+        <span style="font-weight: 700; font-size: 13px;">4. 25 points: </span>Help us know you better: complete your profile and earn points<br>
+        <span style="font-weight: 700; font-size: 13px;">5. 50 points: </span>Book for the first time for a family member and earn points<br> -->
+        </p>
+      </div>
+      <div class="modal-footer">
+<!--         <button type="button" class="btn btn-primary">Save changes</button> -->
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Modal Information Loyalty Points Ends Here -->
+
+
+  <!-- Thank you for giving your valuable feedback Modal -->
+
+    <div class="modal noselect modal-ku fade" tabindex="-1" role="dialog" id="exampleModal2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        <p style="text-align: center;"><i class="fas fa-thumbs-up"></i><br><br>Thanks for giving your valuable feedback.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-info" data-dismiss="modal" style="margin: auto;" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <!-- Feedback Modal Ends Here -->
+
+     <script>
+      document.querySelector('.share-btn').addEventListener('click', function(){
+        console.log('clicked');
+        if (navigator.share) {
+          navigator.share({
+              title: 'Chaayos Bill',
+              text: 'Your Chaayos bill:',
+              url: 'https://wondermail.github.io/CHAAYOS/Chaayos%20Bill.pdf',
+          })
+            .then(() => console.log('Successful share'))
+            .catch((error) => console.log('Error sharing', error));
+        }
+      });
+      
+      $( function() {
+
+  var $gallery = $('.gallery').flickity({
+    cellSelector: '.gallery-cell'
+  })
+  
+});
   
 
-    <script>
+
       (function() {
   
   'use strict';
@@ -175,11 +991,18 @@ https://github.com/andreruffert/scratchie.js
   }
   
 })();
+      
+      
     </script>
 
 
 
 
-</body>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
