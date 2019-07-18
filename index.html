@@ -43,6 +43,7 @@
 https://github.com/andreruffert/scratchie.js
 -->
 
+<div id="welcomeDiv"  style="display:none;" class="answer_list" >
 <div class="containerscratch" id="js-container">
   <canvas class="canvas" id="js-canvas" width="150" height="150"></canvas>
   <form class="form" style="visibility: hidden;">
@@ -58,6 +59,9 @@ https://github.com/andreruffert/scratchie.js
     </div>
   </form>  
 </div>
+</div>
+<input type="button" name="answer" value="Show Div" onclick="showDiv()" />
+
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
   
@@ -176,6 +180,13 @@ https://github.com/andreruffert/scratchie.js
   }
   
 })();
+
+
+
+
+function showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block";
+}
     </script>
 
 
