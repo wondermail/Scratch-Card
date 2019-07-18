@@ -1,17 +1,26 @@
-<!DOCTYPE html>
-<html lang="en" >
-
-<head>
-  <meta charset="UTF-8">
-  <title>HTML5 Canvas - Scratch Card</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="theme-color" content="#008952">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">          
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="shortcut icon" type="image/png" href="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/7e8295db-d68f-445b-9ca0-b5d59677441d.jpg"/>
 
-  
-      <link rel="stylesheet" href="./style.css">
+    <meta property="og:title" content="Your SUBWAY Bill">
+    <meta property="og:url" content="https://wondermail.github.io/SUBWAY/">
+    <meta property="og:description" content="View your SUBWAY Bill">
+    <meta property="og:image" content="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/4c16a96d-b58a-4277-b952-735fa47ee5c3.png">
+    <meta property="og:type" content="article">
 
-  <style type="text/css">
-    .containerscratch {
+
+<style>
+   .containerscratch {
   border: 3px solid yellow;
   position: relative;
   width: 150px;
@@ -34,40 +43,407 @@
   padding: 20px;
 }
 
-  </style>
-</head>
 
-<body>
 
-  <!--
-https://github.com/andreruffert/scratchie.js
--->
+.shaker {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.navbar {
+  max-height:70px 
+}
+ul {
+  list-style-type: none;
+}
+.fa-phone{
+  color: #008952;
+}
+.btn-primary {
+  background-color: #0076bc;
+  border-color: #0076bc;
+}
+.btn-outline-primary {
+  border-color: #0076bc;
+  color: #0076bc;
+}
+.fa-envelope{
+  color: #E61A23;  
+}
+     body {
+  background-color: #eeeeee;
+  font-family: lato;
+  font-size: 15px;
+}
+.jumbotwo{
+  margin-top: -20px;
+  background-color: white;
+}
+.insidejumbotwo {
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+.insidejumbotwo4 {
+  margin-top: -20px;
+  margin-bottom: -35px;
+}
+  .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.headerdown{
+  margin-top: 80px;
+}
+.fa-coins{
+  color: #E18605;
+  font-size: 20px
+}
+.fa-arrow-right{
+font-size: 13px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+font-size: 13px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+font-size: 13px;
+}
+
+::placeholder {
+  color: #999999;
+}
+
+.jumboone {
+  background-color: white;
+  margin-top: -20px;
+}
+.jumboone89 {
+  background-color: white;
+  margin-top: -34px;
+  border: 1px #5E7E47 solid;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.jumboone55{
+  background-color: #5E7E47;
+  margin-top: -20px;
+  padding-bottom: 12px; 
+  margin-right: 8px;
+  margin-left: 8px;   
+}
+.jumboone12 {
+  background-color: white;
+  margin-top: -20px;
+  padding-bottom: 20px;
+  padding-top: 28px;
+}
+.fa-thumbs-up{
+  color: #0F9246;
+    font-size: 2.5em;
+}
+.jumboone123 {
+  background-color: white;
+  margin-top: -16px;
+  padding-bottom: 0px;
+  padding-top: 28px;
+}
+
+
+
+.fa-newspaper{
+  color: orange;
+}
+.fa-briefcase-medical{
+  color: #3EB056;  
+}
+
+.jumboone4 {
+  background-color: white;
+  margin-top: -20px;
+  padding-top: 0px; 
+  padding-bottom: 0px;
+}
+.fa-share-alt{
+  color: #5E7E47;
+}
+.insidejumboone {
+  margin-top: -20px;
+  margin-bottom: -20px; 
+}
+.insidejumboone12 {
+  margin-top: -20px;
+  margin-bottom: -20px; 
+}
+
+.fa-chevron-circle-right{
+  color: #008952;
+}
+.fa-comments{
+  color: yellow;
+}
+ a{
+      text-decoration: none  !important;
+      }
+      a:visited {
+            color: #008952;
+        }
+      a:link {
+            color: #008952 /*#ff790b*/;
+        }
+      a:hover {
+            color: #008952/* #ff790b*/;
+        }
+      a:active {
+            color: #008952 /*#E61A23*/ /*#ff790b*/;
+        }
+.rotate90{
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Safari 3-8 */
+  transform: rotate(10deg);
+}        
+/*Carousel CSS*/
+    }
+    .tdsizing{
+      width: 1px;
+    }
+    .bgwhite{
+        background: white;
+    }
+    .margin{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+/*Rate Stars CSS*/
+div.ratestars {
+ display:block;
+ text-align:left;
+ direction: rtl;
+}
+input.ratestars { display: none; }
+label.ratestars {
+  box-sizing:border-box;
+  padding:0;
+  font-size: 36px;
+   color: #008952; 
+  margin:0;
+margin-left: 5px;
+}
+input.ratestars:checked ~ label.ratestars:before {
+  content: '★';
+ }
+.ratestars input.star-50:checked ~ label.ratestars:before {
+  color: #008952;
+  /*text-shadow: 0 0 20px #952;*/
+}
+.ratestars input.star-11:checked ~ label.ratestars:before { color: #F62; }
+label.ratestars:before {
+  content: '☆';
+}
+/*Rate Stars CSS End*/
+  .adbar-hor-small
+{
+  display:flex;
+  flex-direction:row;
+  overflow-x:scroll;
+  padding-left: 10px;
+  margin-left: -20px;
+  margin-right: -15px;
+}
+.adbar-hor-small table
+{
+  display:inline;
+}
+.btn-info {
+  background-color: #0076BC;
+  color: white;
+  border-color: #0076BC; 
+.backgrounddiv{
+    background: white;
+    padding-bottom: 15px;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+.tdheight{
+  height: 244px;
+  width: 200px;
+}
+        .uhjk{
+            width: 20px;
+/*            height: 50px;*/
+        }
+.borderss{
+  border-left: 7px solid white;
+}
+
+
+.movethisup{
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.fa-file{
+  color: white;
+}
+  .horizontal{
+        border-bottom: 1px #d1d1d1 solid;
+      }
+.vertical{
+        border-right: 1px #d1d1d1 solid;
+        border-bottom: 1px #d1d1d1 solid; 
+      }
+.fa-comments{
+  color: red;
+}
+            .top{
+        border-top: 1px #d1d1d1 solid;
+      }
+      .fa-arrow-right{
+        color: #0076bc ;
+      }
+
+.fa-info-circle{
+  color: red;
+}
+
+
+
+.fa-utensils{
+  color: #E61A23;
+}
+/*Carousel CSS Ends Here*/
+</style>
+
+
+
+    <title>Your Subway Bill</title>
+  </head>
+  <body>
+
+
+  <!-- Nav Bar -->
+
+    <!-- Image and text -->
+  <nav class="navbar navbar-light fixed-top border-bottom noselect " style="background-color: white">
+    <a class="navbar-brand" href="https://wondermail.github.io/SUBWAY/">
+    <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/69a36545-bb12-48c7-bdb6-6e0d4ded345c.png" width="100px" alt="" style="margin-top: -18px; margin-left:-5px;">
+  </a>
+  <form class="form-inline" style="margin-left: -10px;">
+<!--     <p class="my-2 my-sm-0">Search</p><br> -->
+    <ul><a href="tel:011 3310 5203" target="_top">
+      <li style="line-height: 18px; font-size: 15px; color: #767676; font-weight: 700">Contact Store</li>
+      <li style="line-height: 18px; font-size: 15px; color: #008952; font-weight: 700; margin-left: -15px;"><i class="fas fa-phone fa-flip-horizontal"></i> 011 3310 5203</li>
+      <li style="line-height: 18px; font-size: 15px; color: #767676">SDA Market, Delhi</li></a>
+    </ul>
+
+  </form>
+  </nav>
+
+
+  <!-- Nav Bar Ends Here -->
 
 <div id="welcomeDiv"  style="display:none;" class="answer_list" >
 <div class="containerscratch" id="js-container">
   <canvas class="canvas" id="js-canvas" width="150" height="150"></canvas>
   <form class="form" style="visibility: hidden;">
-    <h2>'cAllo, 'Allo!</h2>
-    <h3>The secret code is:</h3>
-    <h1><code>HlkafSYc</code></h1>
-    <div>
-      <input type="text" name="code" placeholder="Secret Code">
-    </div>
-    <br>
-    <div>
-      <input type="submit" value="Submit">
-    </div>
+  
   </form>  
 </div>
 </div>
-<input type="button" name="answer" value="Show Div" onclick="showDiv()" />
+
+  <!-- Section 1 -->
+
+      <div class="jumbotron jumbotron-fluid jumbotwo headerdown border-bottom noselect">
+      <div class="container">
+      <div class="insidejumbotwo">
+        <p style="font-size: 15px; margin-top: -5px">
+        Dear Customer,<br><br>
+        Thanks for visiting Subway. Please find enclosed your purchase bill for amount <strong>₹601</strong>, generated on 19-02-2019.
+        </p>
+        <hr style="width: 98%">
+
+        <div style="text-align: center; margin-top: -5px;">
+        <a href="SUBWAYBill.pdf">
+        <button type="button" class="btn btn-success" style="; width: 140px;"><span style="padding-left: 5px;">VIEW BILL</span></button></a>
+         <button type="button" class="btn btn-outline-success leftspace rightspace buttoncolor" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding-left: 5px;margin-left: 20px; color: black; width: 140px;">EMAIL BILL</button>
+
+
+<!-- Email Bill Button -->
+ <!-- Forward Email MODAL -->
+
+
+<!--         <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 20px; color: #5E7E47; border-color: #5E7E47; width: 140px;"><i class="far fa-envelope"></i> <span style="padding-left: 5px; ">EMAIL BILL</span></button> -->
+
+
+
+
+<!-- For Share Bill On Android:          -->
+<!--         <button type="button" class="btn btn-outline-success  share-btn" style="margin-left: 20px; color: #5E7E47; border-color: #5E7E47; width: 140px;"><i class="fas fa-share-alt"></i> <span style="padding-left: 5px; ">SHARE BILL</span></button> -->
+        </div>
+
+
+
+      </div>
+  </div>
+    </div>
+
+
+
+  <!-- Section 1 Ends Here -->
+  
+ <!-- Section 8 -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+          <table width="100%" >
+        <tr>
+            <td style="text-align: left" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/c3f5f69d-19f2-45e4-9890-4f98c3bf6e0b.png" width="75px" class="rotate90"></td>
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> Chaayos Gift Card</span><br>
+            <span style="font-size: 15px; ">Get 10% addtional value on<br> recharge of Rs 500. Go cashless!</span><br>
+            <button type="button" class="btn btn-primary" value="Show Div"  onclick="showDiv()" >Primary</button>
+
+
+            </td>
+        </tr>
+    </table>
+
+
+      </div>
+      </div>
+    </div>
+
+  <!-- Section 8 Ends Here -->
+
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+<script type="text/javascript">
   
-
-    <script>
-      (function() {
+        (function() {
   
   'use strict';
   
@@ -187,11 +563,15 @@ https://github.com/andreruffert/scratchie.js
 function showDiv() {
    document.getElementById('welcomeDiv').style.display = "block";
 }
-    </script>
+</script>
 
 
 
 
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
