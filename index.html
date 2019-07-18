@@ -1,21 +1,69 @@
-<!DOCTYPE html>
-<html lang="en" >
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="theme-color" content="#008952">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">          
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<head>
-  <meta charset="UTF-8">
-  <title>HTML5 Canvas - Scratch Card</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+<link rel="shortcut icon" type="image/png" href="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/7e8295db-d68f-445b-9ca0-b5d59677441d.jpg"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<style type="text/css">
-  body {
-  padding: 20px 0;
+    <meta property="og:title" content="Your SUBWAY Bill">
+    <meta property="og:url" content="https://wondermail.github.io/SUBWAY/">
+    <meta property="og:description" content="View your SUBWAY Bill">
+    <meta property="og:image" content="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/4c16a96d-b58a-4277-b952-735fa47ee5c3.png">
+    <meta property="og:type" content="article">
+
+
+<style>
+.shaker {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.navbar {
+  max-height:70px 
+}
+ul {
+  list-style-type: none;
+}
+.fa-phone{
+  color: #008952;
+}
+.btn-primary {
+  background-color: #0076bc;
+  border-color: #0076bc;
+}
+.btn-outline-primary {
+  border-color: #0076bc;
+  color: #0076bc;
+}
+
 
 .containerscratch {
   border: 3px solid yellow;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
    -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -31,25 +79,548 @@
 .form {
   padding: 20px;
 }
-
+/*
 .movetheunit{
   margin-left: 5px;
   margin-top: 5px;
 }
+*/
+.fa-envelope{
+  color: #E61A23;  
+}
+     body {
+  background-color: #eeeeee;
+  font-family: lato;
+  font-size: 15px;
+}
+.jumbotwo{
+  margin-top: -20px;
+  background-color: white;
+}
+.insidejumbotwo {
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+.insidejumbotwo4 {
+  margin-top: -20px;
+  margin-bottom: -35px;
+}
+  .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.headerdown{
+  margin-top: 80px;
+}
+.fa-coins{
+  color: #E18605;
+  font-size: 20px
+}
+.fa-arrow-right{
+font-size: 13px;
+}
 
+::-webkit-input-placeholder { /* Edge */
+font-size: 13px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+font-size: 13px;
+}
+
+::placeholder {
+  color: #999999;
+}
+
+.jumboone {
+  background-color: white;
+  margin-top: -20px;
+}
+.jumboone89 {
+  background-color: white;
+  margin-top: -34px;
+  border: 1px #5E7E47 solid;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.jumboone55{
+  background-color: #5E7E47;
+  margin-top: -20px;
+  padding-bottom: 12px; 
+  margin-right: 8px;
+  margin-left: 8px;   
+}
+.jumboone12 {
+  background-color: white;
+  margin-top: -20px;
+  padding-bottom: 20px;
+  padding-top: 28px;
+}
+.fa-thumbs-up{
+  color: #0F9246;
+    font-size: 2.5em;
+}
+.jumboone123 {
+  background-color: white;
+  margin-top: -16px;
+  padding-bottom: 0px;
+  padding-top: 28px;
+}
+
+
+
+.fa-newspaper{
+  color: orange;
+}
+.fa-briefcase-medical{
+  color: #3EB056;  
+}
+
+.jumboone4 {
+  background-color: white;
+  margin-top: -20px;
+  padding-top: 0px; 
+  padding-bottom: 0px;
+}
+.fa-share-alt{
+  color: #5E7E47;
+}
+.insidejumboone {
+  margin-top: -20px;
+  margin-bottom: -20px; 
+}
+.insidejumboone12 {
+  margin-top: -20px;
+  margin-bottom: -20px; 
+}
+
+.fa-chevron-circle-right{
+  color: #008952;
+}
+.fa-comments{
+  color: yellow;
+}
+ a{
+      text-decoration: none  !important;
+      }
+      a:visited {
+            color: #008952;
+        }
+      a:link {
+            color: #008952 /*#ff790b*/;
+        }
+      a:hover {
+            color: #008952/* #ff790b*/;
+        }
+      a:active {
+            color: #008952 /*#E61A23*/ /*#ff790b*/;
+        }
+.rotate90{
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Safari 3-8 */
+  transform: rotate(10deg);
+}        
+/*Carousel CSS*/
+    }
+    .tdsizing{
+      width: 1px;
+    }
+    .bgwhite{
+        background: white;
+    }
+    .margin{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+/*Rate Stars CSS*/
+div.ratestars {
+ display:block;
+ text-align:left;
+ direction: rtl;
+}
+input.ratestars { display: none; }
+label.ratestars {
+  box-sizing:border-box;
+  padding:0;
+  font-size: 36px;
+   color: #008952; 
+  margin:0;
+margin-left: 5px;
+}
+input.ratestars:checked ~ label.ratestars:before {
+  content: '★';
+ }
+.ratestars input.star-50:checked ~ label.ratestars:before {
+  color: #008952;
+  /*text-shadow: 0 0 20px #952;*/
+}
+.ratestars input.star-11:checked ~ label.ratestars:before { color: #F62; }
+label.ratestars:before {
+  content: '☆';
+}
+/*Rate Stars CSS End*/
+  .adbar-hor-small
+{
+  display:flex;
+  flex-direction:row;
+  overflow-x:scroll;
+  padding-left: 10px;
+  margin-left: -20px;
+  margin-right: -15px;
+}
+.adbar-hor-small table
+{
+  display:inline;
+}
+.btn-info {
+  background-color: #0076BC;
+  color: white;
+  border-color: #0076BC; 
+.backgrounddiv{
+    background: white;
+    padding-bottom: 15px;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+.tdheight{
+  height: 244px;
+  width: 200px;
+}
+        .uhjk{
+            width: 20px;
+/*            height: 50px;*/
+        }
+.borderss{
+  border-left: 7px solid white;
+}
+
+
+.movethisup{
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.fa-file{
+  color: white;
+}
+  .horizontal{
+        border-bottom: 1px #d1d1d1 solid;
+      }
+.vertical{
+        border-right: 1px #d1d1d1 solid;
+        border-bottom: 1px #d1d1d1 solid; 
+      }
+.fa-comments{
+  color: red;
+}
+            .top{
+        border-top: 1px #d1d1d1 solid;
+      }
+      .fa-arrow-right{
+        color: #0076bc ;
+      }
+
+.fa-info-circle{
+  color: red;
+}
+
+
+
+.fa-utensils{
+  color: #E61A23;
+}
+/*Carousel CSS Ends Here*/
 </style>
-</head>
 
-<body>
 
-  <!--
-https://github.com/andreruffert/scratchie.js
--->
 
-<div class="movetheunit">
+    <title>Your Subway Bill</title>
+  </head>
+  <body>
+
+
+  <!-- Nav Bar -->
+
+    <!-- Image and text -->
+  <nav class="navbar navbar-light fixed-top border-bottom noselect " style="background-color: white">
+    <a class="navbar-brand" href="https://wondermail.github.io/SUBWAY/">
+    <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/69a36545-bb12-48c7-bdb6-6e0d4ded345c.png" width="100px" alt="" style="margin-top: -18px; margin-left:-5px;">
+  </a>
+  <form class="form-inline" style="margin-left: -10px;">
+<!--     <p class="my-2 my-sm-0">Search</p><br> -->
+    <ul><a href="tel:011 3310 5203" target="_top">
+      <li style="line-height: 18px; font-size: 15px; color: #767676; font-weight: 700">Contact Store</li>
+      <li style="line-height: 18px; font-size: 15px; color: #008952; font-weight: 700; margin-left: -15px;"><i class="fas fa-phone fa-flip-horizontal"></i> 011 3310 5203</li>
+      <li style="line-height: 18px; font-size: 15px; color: #767676">SDA Market, Delhi</li></a>
+    </ul>
+
+  </form>
+  </nav>
+
+
+  <!-- Nav Bar Ends Here -->
+
+
+  <!-- Section 1 -->
+
+      <div class="jumbotron jumbotron-fluid jumbotwo headerdown border-bottom noselect">
+      <div class="container">
+      <div class="insidejumbotwo">
+        <p style="font-size: 15px; margin-top: -5px">
+        Dear Customer,<br><br>
+        Thanks for visiting Subway. Please find enclosed your purchase bill for amount <strong>₹601</strong>, generated on 19-02-2019.
+        </p>
+        <hr style="width: 98%">
+
+        <div style="text-align: center; margin-top: -5px;">
+        <a href="SUBWAYBill.pdf">
+        <button type="button" class="btn btn-success" style="; width: 140px;"><span style="padding-left: 5px;">VIEW BILL</span></button></a>
+         <button type="button" class="btn btn-outline-success leftspace rightspace buttoncolor" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="padding-left: 5px;margin-left: 20px; color: black; width: 140px;">EMAIL BILL</button>
+
+
+<!-- Email Bill Button -->
+ <!-- Forward Email MODAL -->
+
+
+<!--         <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 20px; color: #5E7E47; border-color: #5E7E47; width: 140px;"><i class="far fa-envelope"></i> <span style="padding-left: 5px; ">EMAIL BILL</span></button> -->
+
+
+
+
+<!-- For Share Bill On Android:          -->
+<!--         <button type="button" class="btn btn-outline-success  share-btn" style="margin-left: 20px; color: #5E7E47; border-color: #5E7E47; width: 140px;"><i class="fas fa-share-alt"></i> <span style="padding-left: 5px; ">SHARE BILL</span></button> -->
+        </div>
+
+
+
+      </div>
+  </div>
+    </div>
+
+
+
+  <!-- Section 1 Ends Here -->
+  <div class="modal fade modal-kj" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="en">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Forward Bill</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Enter Email ID:</label>
+            <input type="email" class="form-control" id="recipient-name" placeholder="abc@xyz.com">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-warning">Forward</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Feedback Section -->
+   <!-- Section 2 Based on your profile -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+      <h6 style="font-size: 18px; font-weight: 700"><i class="fas fa-star" style="color: orange;"></i> Give Feedback, Get Free Cookie</h6>
+      <p style="font-size: 15px; margin-top: 2px; margin-bottom: 3px;">Tell us how we can improve</p>
+<!--       <p style="margin-bottom: -5px; margin-top: 2px; font-size: 10px">(Food quality, Store Hygiene, Waiting Time, Others)
+      </p> -->
+<form>
+                <!-- Star Rating -->
+<div class="ratestars ">
+    <input value="5" class="ratestars star-5" id="star-5" type="radio" name="star">
+    <label class="ratestars star-5" for="star-5"></label>
+    <input value="4" class="ratestars star-4" id="star-4" type="radio" name="star">
+    <label class="ratestars star-4" for="star-4"></label>
+    <input value="3" class="ratestars star-3" id="star-3" type="radio" name="star">
+    <label class="ratestars star-3" for="star-3"></label>
+    <input value="2" class="ratestars star-2" id="star-2" type="radio" name="star">
+    <label class="ratestars star-2" for="star-2"></label>
+    <input value="1" class="ratestars star-1" id="star-1" type="radio" name="star">
+    <label class="ratestars star-1" for="star-1"></label>
+  </div>
+
+  <textarea  style="min-width: 85%" id="exampleFormControlTextarea1" class="pl" rows="2" placeholder=" Your suggestions please"></textarea><p></p>
+
+
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">Submit Feedback</button>
+</form>
+
+</div>
+<!-- Star Rating End -->
+
+    
+
+
+      </div>
+        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/12d1cac1-f50a-493e-84d2-1809de4797d9.png" width="70" height="70" align="right" style="margin-top: -200px;">      
+      </div>
+    </div>
+
+  <!-- Section 2 Ends Here Based on your profile -->
+
+<!-- Feedback Section Ends here -->
+
+
+
+
+<!-- Section 7 -->
+
+
+    <!--     <table  class="border-bottom" style="  background-color: white; margin-top: -20px; padding-bottom: 20px; padding-top: 28px; margin-bottom: 32px">
+          <tr>
+            <td height="100" width="300" style="vertical-align: center">
+              <span style="padding-left: 20px; color: black; font-size: 16px;">You are 3 Chai away from</span><br>
+              <span style="padding-left: 20px; color: black; font-size: 20px; color: #8D4D05; font-weight: 700">A FREE CHAI!</span></td>
+            <td width="120" height="100" >
+            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/e6728793-9064-4e70-bf9f-2a6f6f7655ee.png" width="100%" height="100%">              
+            </td>
+          </tr>
+        </table> -->
+
+
+  <!-- Section 7 Ends Here -->
+
+  
+
+ <!-- Section 8 -->
+
+<!-- 
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+          <table width="100%" >
+        <tr>
+            <td style="text-align: left; background-color: #fafafa" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/83e37b4e-2573-454a-8f14-b786240ee8ac.png" width="100%" ></td>
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> Order on Zomato</span><br>
+            <span style="font-size: 15px; ">Get 10% off & free bun maska on all orders above Rs 299</span><br>
+            <span style="color: #5E7E47; font-weight: 700; font-size: 15px">Order Now <i class="fas fa-chevron-circle-right"></i></span>
+            </td>
+        </tr>
+    </table>
+
+
+      </div>
+      </div>
+    </div> -->
+
+  <!-- Section 8 Ends Here -->
+
+ <!-- Section 8 -->
+
+
+<!--     <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+          <table width="100%" >
+        <tr>
+            <td style="text-align: left" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/c3f5f69d-19f2-45e4-9890-4f98c3bf6e0b.png" width="75px" class="rotate90"></td>
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> Chaayos Gift Card</span><br>
+            <span style="font-size: 15px; ">Get 10% addtional value on<br> recharge of Rs 500. Go cashless!</span><br>
+            <span style="color: #5E7E47; font-weight: 700; font-size: 15px">Buy Now <i class="fas fa-chevron-circle-right"></i></span>
+            </td>
+        </tr>
+    </table>
+
+
+      </div>
+      </div>
+    </div>
+ -->
+  <!-- Section 8 Ends Here -->
+
+
+
+<!-- Youtube Video Contest -->
+
+    <div class="jumbotron jumbotron-fluid jumbotwo border-bottom noselect">
+    	<div class="container">
+      <div class="insidejumbotwo border rounded" >
+
+        <h6 style="font-size: 18px; font-weight: 700; margin-left: 5px; margin-top: 5px;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/f50a05ae-d98b-4c3e-8e3d-23b92300701d.png" width="20px;"> Subway Contest</h6>
+        <p style="font-size: 15px; margin-top: -5px; margin-left: 5px;">3 lucky winners get vouchers worth Rs 1000</p>
+<!--         16:9 aspect ratio -->
+
+        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/782d7df7-e721-4b31-a60c-8cebadcdb1da.png" width="100%">
+
+
+              <form style="margin-top: 15px;">
+
+        <p style="margin-bottom: 8px;margin-left: 5px;"><strong>Q. What’s Choco Chip saying to Double Chocolate?</strong></p>
+			<!-- <div class="custom-control custom-radio" style="margin-left: 5px;">
+			  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+			  <label class="custom-control-label" for="customRadio1"><10,000</label>
+			</div>
+			<div class="custom-control custom-radio" style="margin-left: 5px;">
+			  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+			  <label class="custom-control-label" for="customRadio2">10,000-30,000</label>
+			</div>
+			<div class="custom-control custom-radio" style="margin-left: 5px;">
+			  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+			  <label class="custom-control-label" for="customRadio3">30,000-50,000</label>
+			</div>		
+			<div class="custom-control custom-radio" style="margin-left: 5px;">
+			  <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+			  <label class="custom-control-label" for="customRadio4">>50,000</label>
+			</div>						         -->
+			    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your Answer Here..." rows="1" style="margin-left: 5px; max-width: 85%"></textarea>
+			            <button type="button" class="btn btn-success btn-md btn-block" style="margin-top: 20px;" data-toggle="modal" data-target="#exampleModal4200" data-whatever="@mdo">SUBMIT</button>
+
+      </form>
+
+      <!-- 2nd Question Ends -->
+
+
+      </div>
+  </div>
+    </div>
+
+
+
+
+<!-- Youtube Video Contest Ends Here -->
+
+   <!-- Section 8 -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+          <table width="100%" >
+        <tr>
+<!--             <td style="text-align: left; background-color: #fafafa" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/58a0725a-ad79-4a58-a59b-86ebb1ecf282.png" width="80px" class="rounded-circle"></td> -->
+            <td style="text-align: left" width="85px;" height="85px;">
+
+
+              <div class="movetheunit">
 
 <div class="containerscratch" id="js-container">
-  <canvas class="canvas" id="js-canvas" width="100" height="100"></canvas>
+  <canvas class="canvas" id="js-canvas" width="85" height="85"></canvas>
   <form class="form" style="visibility: hidden;">
     <p style="font-size: 10px">'Allo, 'Allo!</p>
     <p style="font-size: 10px">'Allo, 'Allo!</p>
@@ -62,7 +633,223 @@ https://github.com/andreruffert/scratchie.js
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+
+
+
+
+
+
+
+
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> Order On Zomato</span><br>
+            <span style="font-size: 15px; ">Get your favorite subs delivered<br> to your home</span><br><a href="https://www.zomato.com/ncr/restaurants/subway">
+            <span style="color: #E61A23; font-weight: 700; font-size: 15px"><i class="fas fa-utensils" style="color: #E61A23"></i> Order Now</a>
+             <!-- <i class="fas fa-chevron-circle-right"></i> --></span><!-- <a href="WowMomoMenu.pdf"> -->
+            <span style="color: #E61A23; font-weight: 700; font-size: 15px; margin-left: 25px;"><i class="fas fa-file-alt"></i> View Menu</span>             <!-- </a> -->
+            </td>
+        </tr>
+    </table>
+      </div>
+      </div>
+    </div>
+
+  <!-- Section 8 Ends Here -->
+
+
+    <!-- Subway Value Feedback Modal -->
+
+    <div class="modal noselect modal-ku fade" tabindex="-1" role="dialog" id="exampleModal2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+<!--            <p style="text-align: center;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/83c11a06-7769-4f01-8a36-0c341a7ca8e3.png" width="40px;"><br><br> Thanks for giving your valuable feedback. --> <!-- We sincerely appreciate your insight because it helps us build a better customer experience. --><!-- </p><br> -->
+
+           <p style="text-align: center;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/f97dbe4d-be8f-487e-aa1f-28a3312f7ca4.png" width="100px;" class="shaker"><br><br><!-- <span style="font-size: 17px; color: #BE6297"> Did you know?</span> -->
+        	<strong>Thanks for giving your valuable feedback.</strong> Your complimentary cookie is waiting for you. Share the code<strong><span style="; color: #008952"> SUB029H</span></strong> at the counter and avail free cookie on your next order. <br>Happy <span style="; color: #008952">Healthy Eating!</span></p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-info" data-dismiss="modal" style="margin: auto;" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Subway Modal Ends Here -->
+
+
+
+
+  <!-- Section 5 -->
+
+ <!-- Ad -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone4 border-bottom noselect">
+<!--       <div class="container"> -->
+<!--       <div class="insidejumboone">
+ -->
+
+        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/ed6907be-186d-4615-95c1-d48910d88c93.png" width="100%">
+
+
+
+
+<!--       </div> -->
+<!--       </div> -->
+    </div>
+
+  <!-- Section 5 Ends Here -->
+
+
+    <!-- Section 3 -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+
+          <table width="100%" >
+        <tr>
+            <td style="text-align: left" width="85px;" height="85px;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/fa9c189e-2120-4021-9f5e-68cc67a1e24f.png" width="80px" class="rounded-circle"></td>
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> Find A Subway Near You</span><br>
+            <span style="font-size: 15px;">Delicious & devouring<br>subs are waiting for you</span><br>
+            <span style="color: #008952; font-weight: 700; font-size: 15px"><a href="https://www.google.com/maps/search/subway/">Get Directions </a><i class="fas fa-chevron-circle-right"></i></span>
+            </td>
+        </tr>
+    </table>
+
+
+      </div>
+      </div>
+    </div>
+
+  <!-- Section 3 Ends Here -->
+
   
+
+
+<!-- Section 6 Blog Starts Here -->
+<a href="https://indiablooms.com/life-details/L/4473/slum-kids-were-first-guests-at-jalandhar-rsquo-s-new-subway-restaurant.html">
+<div class="jumbotron jumbotron-fluid jumbotwo border-bottom noselect">
+      <div class="container">
+      <div class="insidejumbotwo">
+        <h6 style="font-size: 18px; color: black;font-weight: 700"><i class="fas fa-newspaper"></i> In The News</h6>
+<!--         <p style="font-size: 15px; margin-top: -5px">I know this doesn't make sense, anyway</p> -->
+
+        <div class="border rounded">
+        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/7563e69a-deb0-49cc-a02c-92b0eaddc58b.jpg" width="100%">
+        <br>
+        <h6 style="font-size: 16px; margin-top: 15px; padding-left: 5px; padding-right: 3px; color:black; font-weight: 700">Read: Slum Kids Were First Guests At Jalandhar’s New Subway Restaurant</h6>
+        <p style="font-size: 13px; margin-top: -5px; padding-left: 5px; padding-right: 3px; color:black">The new Subway restaurant in Jalandhar invited 20 underprivileged children as their first guests...</p>
+        <p style="font-size: 8px;color: #767676; margin-top: -15px; padding-left: 5px; ">June 26, 2019</p>
+        </div></a>
+
+
+
+
+
+
+
+
+
+
+              </div>
+  </div>
+    </div>
+
+
+<!-- Section 6 Blog Ends Here -->
+
+
+ 
+
+ <!-- Section 9 -->
+
+
+   <!--  <div class="jumbotron jumbotron-fluid jumboone12 border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone"> -->
+        
+<div class="jumboone123 noselect">        
+       <table class="jumbotron jumbotron-fluid border-bottom" style="background: white; margin-top: -32px;">
+      <tr>
+        <td height="50" width="200" class="border-right" align="center">
+          <i class="fas fa-phone fa-flip-horizontal"></i> 
+          <a href="tel:1244188700 " target="_top">
+            <span style="color: black">Call Us</span>
+        </td></a>
+        <td align="center" width="200">
+        <a href="mailto:SA_development@subway.com?Subject=Hello" target="_top">
+          <i class="far fa-envelope" style="color: #008952"></i><span style="color: black"> Email Us</a></span>
+        </td>
+      </tr>
+    </table>
+</div>
+
+  <!-- Section 9 Ends Here -->
+
+
+  <!-- Modal Information Loyalty Points -->
+
+  <div class="modal" tabindex="-1" role="dialog" id="loyaltymodal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+<!--       <div class="modal-header">
+        <h5 class="modal-title">Earning is simple!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body">
+        <p>
+          For each visit, Customer will be awarded 10 points. The accumulated 60 points under the Program can be redeemed by the Customer for a free "Regular Desi Chai" at any Chaayos store in India. Please note that a Single member can only store a maximum of 300 points under the Loyaltea program from the date of the commencement of Loyaltea Program by Sunshine Teahouse. <a href="https://www.chaayos.com/terms">Read More</a>
+<!--         <span style="font-weight: 700; font-size: 13px;">1. 100 points:</span> Enrolment comes with a Welcome Bonus!<br>
+        <span style="font-weight: 700; font-size: 13px;">2. 50 points: </span>Registering on Mobile App/Portal = earning points<br>
+        <span style="font-weight: 700; font-size: 13px;">3. 10%: Earnin</span>g points for all your spends at SRL diagnostics<br>
+        <span style="font-weight: 700; font-size: 13px;">4. 25 points: </span>Help us know you better: complete your profile and earn points<br>
+        <span style="font-weight: 700; font-size: 13px;">5. 50 points: </span>Book for the first time for a family member and earn points<br> -->
+        </p>
+      </div>
+      <div class="modal-footer">
+<!--         <button type="button" class="btn btn-primary">Save changes</button> -->
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Modal Information Loyalty Points Ends Here -->
+
+
+  <!-- Thank you for giving your valuable feedback Modal -->
+
+    <div class="modal noselect modal-ku fade" tabindex="-1" role="dialog" id="exampleModal4200">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+           <p style="text-align: center;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/83c11a06-7769-4f01-8a36-0c341a7ca8e3.png" width="40px;"><br><br>
+           	<p style="text-align: center;">Thanks for participating in the 'Subway Contest'. 3 Lucky winners shall be announced on 25th July, 2019 on our <a href="https://www.facebook.com/pg/SubwayIndia/" style="color: #4267B2"><strong>Facebook</strong></a> page.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal" style="margin: auto;" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Feedback Modal Ends Here -->
+     
 
     <script>
       (function() {
@@ -183,6 +970,12 @@ https://github.com/andreruffert/scratchie.js
 
 
 
-</body>
 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
