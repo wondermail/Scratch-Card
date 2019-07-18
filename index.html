@@ -4,23 +4,32 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <meta name="theme-color" content="#517539">
+    <meta name="theme-color" content="white">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">          
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<link rel="shortcut icon" type="image/png" href="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/c890a4cc-604d-40c1-aa05-0c17a00220c5.png"/>
+<link rel="shortcut icon" type="image/png" href="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/139811c5-e881-4162-aae4-ce65986dfbe9.jpg"/>
 
-    <meta property="og:title" content="Your Chaayos Bill">
-    <meta property="og:url" content="https://wondermail.github.io/CHAAYOS/">
-    <meta property="og:description" content="View your Chai Bill">
-    <meta property="og:image" content="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/4f403c73-3efc-4fa3-a341-c243c60c1724.png">
-    <meta property="og:type" content="article">
-    
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    
 
+  
+      <link rel="stylesheet" href="style.css">
+
+
+
+    <meta property="og:title" content="Your Raymond Bill">
+    <meta property="og:url" content="https://wondermail.github.io/RAYMOND/">
+    <meta property="og:description" content="View your purchase bill, give feedback and order online">
+    <meta property="og:image" content="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/7dbc9d52-f76a-46e5-93e8-be384b98eed2.png">
+    <meta property="og:type" content="article">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    
 <style>
 
 .containerscratch {
@@ -46,6 +55,19 @@
 }
 
 
+.btn-warning{
+  background-color: #F7941D;
+  color: white;
+}
+
+.myimgdivshowhide{
+ display:none;
+}
+
+.btn-outline-warning{
+  border-color: #F7941D;
+}
+
 .navbar {
   max-height:70px 
 }
@@ -53,7 +75,7 @@ ul {
   list-style-type: none;
 }
 .fa-phone{
-  color: #5E7E47;
+  color: #DA2439;
 }
 .btn-primary {
   background-color: #0076bc;
@@ -64,7 +86,7 @@ ul {
   color: #0076bc;
 }
 .fa-envelope{
-  color: #5E7E47;  
+  color: #DA2439;  
 }
      body {
   background-color: #eeeeee;
@@ -79,6 +101,13 @@ ul {
   margin-top: -20px;
   margin-bottom: -20px;
 }
+
+.insidejumbotwo360 {
+  margin-top: -20px;
+  margin-bottom: -40px;
+}
+
+
 .insidejumbotwo4 {
   margin-top: -20px;
   margin-bottom: -35px;
@@ -96,24 +125,14 @@ ul {
   margin-top: 80px;
 }
 .fa-coins{
-  color: #E18605;
+  color: #04A653;
   font-size: 20px
 }
 .fa-arrow-right{
-font-size: 13px;
+  color: #DA2439;
 }
 
-::-webkit-input-placeholder { /* Edge */
-font-size: 13px;
-}
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-font-size: 13px;
-}
-
-::placeholder {
-  color: #999999;
-}
 
 .jumboone {
   background-color: white;
@@ -122,12 +141,12 @@ font-size: 13px;
 .jumboone89 {
   background-color: white;
   margin-top: -34px;
-  border: 1px #5E7E47 solid;
+  border: 1px #3eb056 solid;
   margin-right: 8px;
   margin-left: 8px;
 }
 .jumboone55{
-  background-color: #5E7E47;
+  background-color: #3EB056;
   margin-top: -20px;
   padding-bottom: 12px; 
   margin-right: 8px;
@@ -140,7 +159,7 @@ font-size: 13px;
   padding-top: 28px;
 }
 .fa-thumbs-up{
-  color: #0076bc;
+  color: #4267B2;
     font-size: 2.5em;
 }
 .jumboone123 {
@@ -149,15 +168,15 @@ font-size: 13px;
   padding-bottom: 0px;
   padding-top: 28px;
 }
-
-
 .fa-newspaper{
-  color: #5E7E47;
+  color: #3EB056;
 }
 .fa-briefcase-medical{
   color: #3EB056;  
 }
-
+.fa-info-circle{
+  color: /*#bab8b4*/ #8e8b84;
+}
 .jumboone4 {
   background-color: white;
   margin-top: -20px;
@@ -165,7 +184,7 @@ font-size: 13px;
   padding-bottom: 0px;
 }
 .fa-share-alt{
-  color: #5E7E47;
+  color: #0076BC;
 }
 .insidejumboone {
   margin-top: -20px;
@@ -176,10 +195,10 @@ font-size: 13px;
   margin-bottom: -20px; 
 }
 .fa-chevron-circle-right{
-  color:black;
+  color:#F7941D;
 }
 .fa-chevron-circle-right{
-  color: #5E7E47;
+  color: #F7941D;
 }
 .fa-comments{
   color: yellow;
@@ -188,16 +207,16 @@ font-size: 13px;
       text-decoration: none  !important;
       }
       a:visited {
-            color: #5E7E47;
+            color: #0076bc;
         }
       a:link {
-            color: #5E7E47 /*#ff790b*/;
+            color: #0076bc /*#ff790b*/;
         }
       a:hover {
-            color: #5E7E47/* #ff790b*/;
+            color: #0076bc/* #ff790b*/;
         }
       a:active {
-            color: #5E7E47 /*#ff790b*/;
+            color: #0076bc /*#ff790b*/;
         }
 .rotate90{
   -ms-transform: rotate(10deg); /* IE 9 */
@@ -212,6 +231,13 @@ font-size: 13px;
     .bgwhite{
         background: white;
     }
+
+    .fa-percentage{
+      color: #3EB056 ;
+    }
+
+
+
     .margin{
         margin-left: 10px;
         margin-top: 10px;
@@ -227,7 +253,7 @@ label.ratestars {
   box-sizing:border-box;
   padding:0;
   font-size: 36px;
-   color:#009141;
+   color:#DA2439;
   margin:0;
 margin-left: 5px;
 }
@@ -235,7 +261,7 @@ input.ratestars:checked ~ label.ratestars:before {
   content: '★';
  }
 .ratestars input.star-50:checked ~ label.ratestars:before {
-  color:#009141;
+  color:#DA2439;
   /*text-shadow: 0 0 20px #952;*/
 }
 .ratestars input.star-11:checked ~ label.ratestars:before { color: #F62; }
@@ -281,12 +307,12 @@ label.ratestars:before {
   margin-top: -10px;
   margin-left: -10px;
 }
-.fa-file{
-  color: white;
-}
+
+
   .horizontal{
         border-bottom: 1px #d1d1d1 solid;
       }
+}
 .vertical{
         border-right: 1px #d1d1d1 solid;
         border-bottom: 1px #d1d1d1 solid; 
@@ -298,43 +324,47 @@ label.ratestars:before {
         border-top: 1px #d1d1d1 solid;
       }
       .fa-arrow-right{
-        color: #0076bc ;
+        color: #DA2439;
       }
-
-.fa-info-circle{
-  color: red;
-}
-
-
-.fa-utensils{
-  color: #8D4D05;
-}
 /*Carousel CSS Ends Here*/
+
+.fa-file-invoice{
+  color: white;
+
+}
+
+.btn-xl {
+ /*   padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;*/
+    width:45%;
+}
+.fa-star{
+  color: #EABF0F;
+}
+
 </style>
 
 
 
-  <title>Your Chaayos Bill</title>
+    <title>Raymond</title>
   </head>
   <body>
-
-
-
 
 
   <!-- Nav Bar -->
 
     <!-- Image and text -->
   <nav class="navbar navbar-light fixed-top border-bottom noselect " style="background-color: white">
-    <a class="navbar-brand" href="https://wondermail.github.io/CHAAYOS/">
-    <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/84e92d16-1db5-42b2-99b5-56ab165753f4.png" width="100" alt="" style="margin-top: -18px; margin-left:-5px;">
+    <a class="navbar-brand" href="https://wondermail.github.io/RAYMOND/">
+    <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/170ae9e1-21f7-43ed-bbe4-33ee42c9b349.png" width="100" alt="" style="margin-top: -18px;">
   </a>
   <form class="form-inline" style="margin-left: -10px;">
 <!--     <p class="my-2 my-sm-0">Search</p><br> -->
-    <ul><a href="tel:011-45797234" target="_top">
+    <ul><a href="tel:0124-4227565" target="_top">
       <li style="line-height: 18px; font-size: 15px; color: #767676; font-weight: 700">Contact Store</li>
-      <li style="line-height: 18px; font-size: 15px; color: #5E7E47; font-weight: 700; margin-left: -15px;"><i class="fas fa-phone fa-flip-horizontal"></i> 1800 120 2424</li>
-      <li style="line-height: 18px; font-size: 15px; color: #767676">SDA Market</li></a>
+      <li style="line-height: 18px; font-size: 15px; color: #DA2439; font-weight: 700; margin-left: -15px;"><i class="fas fa-phone fa-flip-horizontal"></i> 0124-4227565</li>
+      <li style="line-height: 18px; font-size: 15px; color: #767676">MGF Mall, Gurgaon</li></a>
     </ul>
 
   </form>
@@ -350,28 +380,16 @@ label.ratestars:before {
       <div class="container">
       <div class="insidejumbotwo">
         <p style="font-size: 15px; margin-top: -5px">
-        Dear Aamer,<br><br>
-        Thanks for ordering at Chaayos! Please find enclosed your purchase bill for amount ₹160, generated on 13-05-2019.
+        Dear Customer,<br><br>
+        Please find your purchase bill for <strong>Rs 601</strong> generated on 19th February, 2019 at MGF Mall, Gurgaon.
         </p>
         <hr style="width: 98%">
 
         <div style="text-align: center; margin-top: -5px;">
-        <a href="ChaayosBill.pdf">
-        <button type="button" class="btn btn-success" style="background-color: #5E7E47; width: 140px; border-color: #5E7E47"><i class="fas fa-file"></i> <span style="padding-left: 5px;">VIEW BILL</span></button></a>
+        <a href="RaymondBill.pdf">
+        <button type="button" class="btn btn-danger btn-xl"><i class="fas fa-file-invoice"></i><span style="padding-left: 5px; color: white">VIEW BILL</span></button></a>
 
-        <a href="mailto:?subject=My Chaayos Bill&body=Hey,%0D%0A%0D%0AHere is my Chaayos bill dated 13/05/2019 for Rs 160. To view bill, please click: https://wondermail.github.io/CHAAYOS/ChaayosBill.pdf" target="_top">
-        <button type="button" class="btn btn-outline-success" style="margin-left: 20px; color: #5E7E47; border-color: #5E7E47; width: 140px;"><i class="far fa-envelope"></i> <span style="padding-left: 5px; ">EMAIL BILL</span></button></a>
-
-
-<!-- Email Bill Button -->
-
-<!--         <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="margin-left: 20px; color: #5E7E47; border-color: #5E7E47; width: 140px;"><i class="far fa-envelope"></i> <span style="padding-left: 5px; ">EMAIL BILL</span></button> -->
-
-
-
-
-<!-- For Share Bill On Android:          -->
-<!--         <button type="button" class="btn btn-outline-success  share-btn" style="margin-left: 20px; color: #5E7E47; border-color: #5E7E47; width: 140px;"><i class="fas fa-share-alt"></i> <span style="padding-left: 5px; ">SHARE BILL</span></button> -->
+        <button type="button" class="btn btn-outline-danger  btn-xl" style="margin-left: 5px;" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fas fa-envelope"></i><span style="padding-left: 5px; color: black">EMAIL BILL</span></button>
         </div>
 
 
@@ -384,9 +402,9 @@ label.ratestars:before {
 
   <!-- Section 1 Ends Here -->
 
-  <!-- Forward Email Modal -->
 
-    <!-- Forward Email MODAL -->
+  <!-- Forward Email Modal Starts -->
+   <!-- Forward Email MODAL -->
   <div class="modal fade modal-kj" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="en">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -397,153 +415,57 @@ label.ratestars:before {
         </button>
       </div>
       <div class="modal-body">
-        
-
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Enter Email ID:</label>
+            <input type="email" class="form-control" id="recipient-name" placeholder="abc@xyz.com">
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-success">Forward</button>
+        <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger">Forward</button>
       </div>
     </div>
   </div>
 </div>
-
-
-
-  <!-- Forward Email Modal Ends Here -->
+  <!-- Forward Email Modal Ends -->
 
 <!-- Section 7 -->
 
 
-    <!--     <table  class="border-bottom" style="  background-color: white; margin-top: -20px; padding-bottom: 20px; padding-top: 28px; margin-bottom: 32px">
+    <div class="jumbotron jumbotron-fluid jumboone12 border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+        <table>
           <tr>
-            <td height="100" width="300" style="vertical-align: center">
-              <span style="padding-left: 20px; color: black; font-size: 16px;">You are 3 Chai away from</span><br>
-              <span style="padding-left: 20px; color: black; font-size: 20px; color: #8D4D05; font-weight: 700">A FREE CHAI!</span></td>
-            <td width="120" height="100" >
-            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/e6728793-9064-4e70-bf9f-2a6f6f7655ee.png" width="100%" height="100%">              
+            <td width="300" style="vertical-align: center">
+              <i class="fas fa-coins"></i> <span style="padding-left: 10px; color: black">Your Reward Points:</span> <span style="color: black; font-weight: 900;">350</span><!-- <i class="fas fa-info-circle"></i> --><!-- </span> --></td>
+            <td width="100" style="text-align: right; vertical-align: center">
+        <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#loyaltymodal" data-whatever="@mdo"><span style="color: white"> Manage</span></button>              
             </td>
-          </tr>
-        </table> -->
-
-
-  <!-- Section 7 Ends Here -->
-
-  <!-- Section 7 -->
-
-
-        <table  class="border-bottom noselect" style="  background-color: white; margin-top: -20px; padding-bottom: 20px; padding-top: 28px; margin-bottom: 32px">
-          <tr>
-            <td width="120" height="100" >
-            <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/e6728793-9064-4e70-bf9f-2a6f6f7655ee.png" width="100%" height="100%">              
-            </td>
-            <td height="100" width="300" style="vertical-align: left; padding-left: 15px">
-              <span style="color:  #8D4D05; font-size: 20px; font-weight: 700">3 more to go!</span><br>
-              <span style="color: black; font-size: 15px; font-weight: 400">Total Loyalty points: <strong><span style="color:  #8D4D05">30</span></strong>. <br>You are <i>"three"</i> Chai away from a FREE Chai</span><u><i><span style="margin-left: 5px; color: blue;" data-toggle="modal" data-target="#loyaltymodal" data-whatever="@mdo">T&C</span></i></u><br>
-          </td>
-
-            
-              
-
-
-
-
-
           </tr>
         </table>
-
-
-  <!-- Section 7 Ends Here -->
-
-  <!-- Section 2 Feedback -->
-
-
-    <div class="jumbotron jumbotron-fluid jumboone55 border-bottom noselect">
-      <div class="container">
-      <div class="insidejumboone" style="padding-bottom: 10px;">
-        
-        <h6 style="font-size: 18px; font-weight: 700; "><span style="color: white"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/ba7f4d1e-ac7f-4ca6-a919-7052fb7240bb.png" width="40px" style="float:left;margin-right:10px"> Your feedback is highly<br> appreciated</span></h6>
-        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/947e8029-06c3-4341-b34d-6a3e47360883.png" width="50" class="float-right" style="margin-top: -55px">
-
-
-
-<!-- Table  -->
-     <!--    <table >
-          <tr>
-            <td width="60px;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/ba7f4d1e-ac7f-4ca6-a919-7052fb7240bb.png" width="40px"></td>
-            <td width="320px;"><span style="color: white; font-size: 18px; font-weight: 700"> Rate your Chaayos experience</span>
-            </td>
-            <td width="80px;">        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/947e8029-06c3-4341-b34d-6a3e47360883.png" width="50px" align="right"></td>           
-          </tr>
-
-
-                    <tr>
-            <td width="60px;" style="vertical-align: top"></td>
-            <td width="320px;" style="text-align: top"><span style="color: white; font-size: 12px; "> Help us make it flawless for you!</span>
-            </td>
-            <td width="80px;" style="vertical-align: top"></td>           
-          </tr>
-        </table> -->
-<!-- Table Ends -->
-
 
 
       </div>
       </div>
     </div>
 
+  <!-- Section 7 Ends Here -->
+
+<!-- Feedback Section -->
+   <!-- Section 2 Based on your profile -->
 
 
-        <div class="jumbotron jumbotron-fluid jumboone89  noselect">
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
       <div class="container">
       <div class="insidejumboone">
 
-      <form>
+                <h6 style="font-size: 18px; font-weight: 700"><i class="fas fa-star"></i> We Value Your Feedback </h6>
+        <p style="font-size: 15px; margin-top: -10px; margin-bottom: 3px;">Tell us how we can improve</p>
 
-        <p style="margin-bottom: 8px;"><strong>1. How would you rate the friendliness of our staff?</strong></p>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline100" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline100">Extremely satisfied</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline101" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline101">Satisfied</label>
-        </div>        
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline102" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline102">Dissatisfied</label>
-        </div>
-<!--         <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline103" name="customRadioInline1" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline103">More than 30 mins</label>
-        </div>   --> 
-
-        <!-- 2nd Question -->             
-
-<!--         <p style="margin-bottom: 8px; margin-top: 20px;"><strong>2.  How do you rate behavior & capability of the pathologist?</strong></p>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline12" name="customRadioInline145" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline12">Good</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline13" name="customRadioInline145" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline13">Satisfactory</label>
-        </div>        
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="customRadioInline14" name="customRadioInline145" class="custom-control-input">
-          <label class="custom-control-label" for="customRadioInline14">Needs Improvement</label>
-        </div>
- -->      </form>
-
-      <!-- 2nd Question Ends -->
-
-       <!-- 3rd Question -->             
-
-        <p style="margin-bottom: -10px; margin-top: 20px;"><strong>2.  How do you rate your overall Chaayos experience?</strong></p>
-        <p style="margin-bottom: -5px; margin-top: 10px; font-size: 10px">(Food quality, Store Hygiene, Waiting Time, Value for money)</p>
-
-
-        <!-- Star Rating -->
+                <!-- Star Rating -->
 <div class="ratestars ">
     <input value="5" class="ratestars star-5" id="star-5" type="radio" name="star">
     <label class="ratestars star-5" for="star-5"></label>
@@ -556,266 +478,52 @@ label.ratestars:before {
     <input value="1" class="ratestars star-1" id="star-1" type="radio" name="star">
     <label class="ratestars star-1" for="star-1"></label>
   </div>
-  <textarea  style="min-width: 85%" id="exampleFormControlTextarea1" class="pl" rows="3" placeholder=" Tell us what we could be doing better"></textarea><p></p>
-  <input class="btn btn-info btn-md" type="submit" value="Submit Feedback" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">
+  <textarea  style="min-width: 85%" id="exampleFormControlTextarea1" class="pl" rows="2" placeholder=" Your suggestions please..."></textarea><p></p>
+  <input class="btn btn-danger " type="submit" value="Submit Feedback" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">
+
 
 </div>
 <!-- Star Rating End -->
 
+    
 
-
-
-      </form>
-
-      <!-- 3rd Question Ends -->
-
-
-<!--         <p style="font-size: 15px; margin-top: -5px">We love you Bagmishree!</p>       -->
 
       </div>
       </div>
     </div>
 
+  <!-- Section 2 Ends Here Based on your profile -->
 
+<!-- Feedback Section Ends here -->
 
+<!-- Two Blocks Start -->
 
-
-
-
-  <!-- Section 2 Feedback Ends Here -->
-
-
- <!-- Section 8 -->
-
-<!-- 
-    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
-      <div class="container">
-      <div class="insidejumboone">
-
-
-          <table width="100%" >
-        <tr>
-            <td style="text-align: left; background-color: #fafafa" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/83e37b4e-2573-454a-8f14-b786240ee8ac.png" width="100%" ></td>
-            <td  style="text-align: left" >
-            <span style="font-weight: 900; font-size: 15px;"> Order on Zomato</span><br>
-            <span style="font-size: 15px; ">Get 10% off & free bun maska on all orders above Rs 299</span><br>
-            <span style="color: #5E7E47; font-weight: 700; font-size: 15px">Order Now <i class="fas fa-chevron-circle-right"></i></span>
+        <table  class="border-bottom noselect" style="  background-color: white; margin-top: -20px; padding-bottom: 20px; padding-top: 28px; margin-bottom: 32px">
+          <tr>
+            <td width="250" height="150" style="vertical-align: center; text-align: center; border-right: 3px solid #eeeeee" ><a href="https://raymondnext.com/pages/pagiftcards">
+              <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/5193665b-a697-4f3a-ad94-51369a99a79d.png" width="70px;" ><br>
+              <span style="color:  black; font-size: 18px; font-weight: 700">Raymond Gift Card</span><br>
+              <span style="color: #767676; font-size: 13px; "><div class="b">Put a smile on his face! Gift Raymond voucher.</div></span>
+              <span style="color: #DC062B; font-size: 13px; "><div class="b"><strong>Buy Now</strong></div></span><br>
             </td>
-        </tr>
-    </table>
 
+            <td height="150" width="250" style="vertical-align: center; text-align: center">
+            	<a href="https://www.google.com/maps/search/Raymond/"> 
 
-      </div>
-      </div>
-    </div> -->
-
-  <!-- Section 8 Ends Here -->
-
- <!-- Section 8 -->
-
-
-    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
-      <div class="container">
-      <div class="insidejumboone">
-
-
-          <table width="100%" >
-        <tr>
-            <td style="text-align: left" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/c3f5f69d-19f2-45e4-9890-4f98c3bf6e0b.png" width="75px" class="rotate90"></td>
-            <td  style="text-align: left" >
-            <span style="font-weight: 900; font-size: 15px;"> Chaayos Gift Card</span><br>
-            <span style="font-size: 15px; ">Get 10% addtional value on<br> recharge of Rs 500. Go cashless!</span><br>
-            <span style="color: #5E7E47; font-weight: 700; font-size: 15px">Buy Now <i class="fas fa-chevron-circle-right"></i></span>
+              <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/9bc757de-995e-4348-8c0b-fc628ca9bdf4.png" width="70px;"><br>              
+              <span style="color:  black; font-size: 18px; font-weight: 700">Locate Store</span><br>
+              <span style="color: #767676; font-size: 13px; "><div class="b">Get signature outfits to mark an impression. Visit now!</div></span>
+              <span style="color: #DC062B; font-size: 13px; " ><div class="b"><strong>Get Directions</strong></div></span><br></a>
             </td>
-        </tr>
-    </table>
+
+          </tr>
+        </table>
 
 
-      </div>
-      </div>
-    </div>
+<!-- Two Blocks End -->
+<!-- Scratch Card Modal Starts -->
 
-  <!-- Section 8 Ends Here -->
-   <!-- Section 8 -->
-
-
-    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
-      <div class="container">
-      <div class="insidejumboone">
-
-
-          <table width="100%" >
-        <tr>
-<!--             <td style="text-align: left; background-color: #fafafa" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/58a0725a-ad79-4a58-a59b-86ebb1ecf282.png" width="80px" class="rounded-circle"></td> -->
-                        <td style="text-align: left" width="85px;" height="85px;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/58a0725a-ad79-4a58-a59b-86ebb1ecf282.png" width="80px" class="rounded-circle"></td>
-            <td  style="text-align: left" >
-            <span style="font-weight: 900; font-size: 15px;"> Order Online</span><br>
-            <span style="font-size: 15px; ">Get your favorite food delivered<br> to your home</span><br><a href="https://www.chaayos.com">
-            <span style="color: #5E7E47; font-weight: 700; font-size: 15px"><i class="fas fa-utensils" style="color: #5E7E47"></i> Order Now</a>
-             <!-- <i class="fas fa-chevron-circle-right"></i> --></span>
-            <span style="color: #5E7E47; font-weight: 700; font-size: 15px; margin-left: 25px;"><i class="fas fa-file-alt"></i> View Menu</span>             
-            </td>
-        </tr>
-    </table>
-
-
-      </div>
-      </div>
-    </div>
-
-  <!-- Section 8 Ends Here -->
-
-
-
-
-  <!-- Section 5 -->
-
- <!-- Ad -->
-
-
-    <div class="jumbotron jumbotron-fluid jumboone4 border-bottom noselect">
-<!--       <div class="container"> -->
-<!--       <div class="insidejumboone">
- -->
-
-        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/3fa36cd2-5079-4573-b9c7-8184bbae2c0b.jpg" width="100%">
-
-
-
-
-<!--       </div> -->
-<!--       </div> -->
-    </div>
-
-  <!-- Section 5 Ends Here -->
-
-
-    <!-- Section 3 -->
-
-
-    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
-      <div class="container">
-      <div class="insidejumboone">
-
-
-          <table width="100%" >
-        <tr>
-            <td style="text-align: left" width="85px;" height="85px;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/0cbd96d4-0b1c-4ef6-bc34-5bbffab9c744.png" width="80px" class="rounded-circle"></td>
-            <td  style="text-align: left" >
-            <span style="font-weight: 900; font-size: 15px;"> Find Your Chaayos</span><br>
-            <span style="font-size: 15px;">Whatever you're looking for,<br>we've got just the place.</span><br>
-            <span style="color: #5E7E47; font-weight: 700; font-size: 15px"><a href="https://www.google.com/maps/search/Chaayos/">Get Directions </a><i class="fas fa-chevron-circle-right"></i></span>
-            </td>
-        </tr>
-    </table>
-
-
-      </div>
-      </div>
-    </div>
-
-  <!-- Section 3 Ends Here -->
-
-
-
-
-<!-- Section 6 Blog Starts Here -->
-<a href="https://www.livemint.com/Companies/3akE3dA7MGg2ip5RGZQYoN/How-Chaayos-got-its-brew-right.html">
-<div class="jumbotron jumbotron-fluid jumbotwo border-bottom noselect">
-      <div class="container">
-      <div class="insidejumbotwo">
-        <h6 style="font-size: 18px; font-weight: 700"><i class="fas fa-newspaper"></i> In The News</h6>
-<!--         <p style="font-size: 15px; margin-top: -5px">I know this doesn't make sense, anyway</p> -->
-
-        <div class="border rounded">
-        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/5cde0edc-33e5-4835-a813-5e488d719980.png" width="100%">
-        <br>
-        <h6 style="font-size: 16px; margin-top: 15px; padding-left: 5px; padding-right: 3px; color:black; font-weight: 700">Read: How Chaayos Got Its Brew Right</h6>
-        <p style="font-size: 13px; margin-top: -5px; padding-left: 5px; padding-right: 3px; color:black">Our option of 12 add-ons gives our customers a total of over 12,000 ways to make their chai at Chaayos...</p>
-        <p style="font-size: 8px;color: #0076BC; margin-top: -15px; padding-left: 5px; ">Jan 3, 2018</p>
-        </div></a>
-
-
-
-
-
-
-
-
-
-
-              </div>
-  </div>
-    </div>
-
-
-<!-- Section 6 Blog Ends Here -->
-
-
- 
-
- <!-- Section 9 -->
-
-
-   <!--  <div class="jumbotron jumbotron-fluid jumboone12 border-bottom noselect">
-      <div class="container">
-      <div class="insidejumboone"> -->
-        
-<div class="jumboone123 noselect">        
-       <table class="jumbotron jumbotron-fluid border-bottom" style="background: white; margin-top: -32px;">
-      <tr>
-        <td height="50" width="200" class="border-right" align="center">
-          <i class="fas fa-phone fa-flip-horizontal"></i> 
-          <a href="tel:1800 120 2424" target="_top">
-            <span style="color: black">Call Us</span>
-        </td></a>
-        <td align="center" width="200">
-        <a href="mailto:letstalk@chaayos.com?Subject=Hello" target="_top">
-          <i class="far fa-envelope"></i><span style="color: black"> Email Us</a></span>
-        </td>
-      </tr>
-    </table>
-</div>
-
-  <!-- Section 9 Ends Here -->
-
-
-  <!-- Modal Information Loyalty Points -->
-
-  <div class="modal" tabindex="-1" role="dialog" id="loyaltymodal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-<!--       <div class="modal-header">
-        <h5 class="modal-title">Earning is simple!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div> -->
-      <div class="modal-body">
-        <p>
-          For each visit, Customer will be awarded 10 points. The accumulated 60 points under the Program can be redeemed by the Customer for a free "Regular Desi Chai" at any Chaayos store in India. Please note that a Single member can only store a maximum of 300 points under the Loyaltea program from the date of the commencement of Loyaltea Program by Sunshine Teahouse. <a href="https://www.chaayos.com/terms">Read More</a>
-<!--         <span style="font-weight: 700; font-size: 13px;">1. 100 points:</span> Enrolment comes with a Welcome Bonus!<br>
-        <span style="font-weight: 700; font-size: 13px;">2. 50 points: </span>Registering on Mobile App/Portal = earning points<br>
-        <span style="font-weight: 700; font-size: 13px;">3. 10%: Earnin</span>g points for all your spends at SRL diagnostics<br>
-        <span style="font-weight: 700; font-size: 13px;">4. 25 points: </span>Help us know you better: complete your profile and earn points<br>
-        <span style="font-weight: 700; font-size: 13px;">5. 50 points: </span>Book for the first time for a family member and earn points<br> -->
-        </p>
-      </div>
-      <div class="modal-footer">
-<!--         <button type="button" class="btn btn-primary">Save changes</button> -->
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  <!-- Modal Information Loyalty Points Ends Here -->
-
-
-  <!-- Thank you for giving your valuable feedback Modal -->
-
-    <div class="modal noselect modal-ku fade" tabindex="-1" role="dialog" id="exampleModal2">
+    <div class="modal noselect modal-ku fade" tabindex="-1" role="dialog" id="scratchmodal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -850,9 +558,551 @@ label.ratestars:before {
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+    <!-- Scratch Card Modal Ends Here -->
+
+  <!-- Section 2 Feedback -->
+
+<!-- 
+    <div class="jumbotron jumbotron-fluid jumboone55 border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone" style="padding-bottom: 10px;">
+        
+        <h6 style="font-size: 18px; font-weight: 700; "><span style="color: white"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/ba7f4d1e-ac7f-4ca6-a919-7052fb7240bb.png" width="40px" style="float:left;margin-right:10px"> Your feedback is highly<br> appreciated</span> </h6>
+        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/947e8029-06c3-4341-b34d-6a3e47360883.png" width="50" class="float-right" style="margin-top: -55px">
+
+      </div>
+      </div>
+    </div>
+
+
+
+        <div class="jumbotron jumbotron-fluid jumboone89  noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+      <form>
+
+        <p style="margin-bottom: 8px;"><strong>1. How long was the waiting time for your test?</strong></p>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline100" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline100">0-5 mins</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline101" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline101">5-15 mins</label>
+        </div>        
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline102" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline102">15-30 mins</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline103" name="customRadioInline1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline103">More than 30 mins</label>
+        </div>   
+ -->
+        <!-- 2nd Question -->             
+
+  <!--       <p style="margin-bottom: 8px; margin-top: 20px;"><strong>2.  How do you rate behavior & capability of the pathologist?</strong></p>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline12" name="customRadioInline145" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline12">Good</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline13" name="customRadioInline145" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline13">Satisfactory</label>
+        </div>        
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline14" name="customRadioInline145" class="custom-control-input">
+          <label class="custom-control-label" for="customRadioInline14">Needs Improvement</label>
+        </div>
+      </form> -->
+
+      <!-- 2nd Question Ends -->
+
+       <!-- 3rd Question -->             
+
+   <!--      <p style="margin-bottom: -5px; margin-top: 20px;"><strong>3.  How do you overall rate our laboratory?</strong></p>
+
+ -->
+        <!-- Star Rating -->
+<!-- <div class="ratestars ">
+    <input value="5" class="ratestars star-5" id="star-5" type="radio" name="star">
+    <label class="ratestars star-5" for="star-5"></label>
+    <input value="4" class="ratestars star-4" id="star-4" type="radio" name="star">
+    <label class="ratestars star-4" for="star-4"></label>
+    <input value="3" class="ratestars star-3" id="star-3" type="radio" name="star">
+    <label class="ratestars star-3" for="star-3"></label>
+    <input value="2" class="ratestars star-2" id="star-2" type="radio" name="star">
+    <label class="ratestars star-2" for="star-2"></label>
+    <input value="1" class="ratestars star-1" id="star-1" type="radio" name="star">
+    <label class="ratestars star-1" for="star-1"></label>
+  </div>
+  <textarea  style="min-width: 85%" id="exampleFormControlTextarea1" class="pl" rows="3" placeholder=" Your suggestions please..."></textarea><p></p>
+  <input class="btn btn-info btn-md" type="submit" value="Submit Feedback" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">
+
+</div> -->
+<!-- Star Rating End -->
+
+
+<!-- 
+
+      </form> -->
+
+      <!-- 3rd Question Ends -->
+
+
+<!--         <p style="font-size: 15px; margin-top: -5px">We love you Bagmishree!</p>       -->
+
+  <!--     </div>
+      </div>
+    </div>
+ -->
+
+
+
+<!-- Youtube Video Contest -->
+
+    <div class="jumbotron jumbotron-fluid jumbotwo border-bottom noselect">
+    	<div class="container">
+      <div class="insidejumbotwo border rounded" >
+
+        <h6 style="font-size: 18px; font-weight: 700; margin-left: 5px; margin-top: 5px;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/f50a05ae-d98b-4c3e-8e3d-23b92300701d.png" width="20px;"> Raymond Contest</h6>
+        <p style="font-size: 15px; margin-top: -5px; margin-left: 5px;">5 lucky winners get vouchers worth Rs 1000</p>
+<!--         16:9 aspect ratio -->
+
+        <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/8e250ce6-1b99-4f97-8a49-6ed229658e1b.png" width="100%">
+
+
+              <form style="margin-top: 15px;">
+
+        <p style="margin-bottom: 8px;margin-left: 5px;"><strong>Q. In your opinion, mention 5 qualities that make 'The Complete Man'?</strong></p>
+        <div style="margin-left: 5px;">
+		<textarea  style="min-width: 85%" id="exampleFormControlTextarea1" class="pl" rows="2" placeholder=" Your Answer..."></textarea></div>
+<button type="button" class="btn btn-danger btn-md btn-block" style="margin-top: 20px;" data-toggle="modal" data-target="#exampleModal4200" data-whatever="@mdo">SUBMIT</button>
+
+
+      </form>
+
+      <!-- 2nd Question Ends -->
+
+
+      </div>
+  </div>
+    </div>
+
+
+
+
+<!-- Youtube Video Contest Ends Here -->
+
+
+
+  <!-- Fourth Section Starts -->
+ <div class="jumbotron jumbotron-fluid jumbotwo border-bottom noselect">
+      <div class="container">
+      <div class="insidejumbotwo360">
+
+                <h6 style="font-size: 18px; font-weight: 700; margin-bottom: 10px;"><img src="https://img.icons8.com/bubbles/50/000000/domain.png" width="30px"> Shop Online</h6>
+        <p style="font-size: 15px; margin-top: -10px; margin-bottom: 3px;">Upto 30% off on select merchandise</p>
+
+
+
+
+<div class="adbar-hor-small movethisup">
+
+
+
+<!-- Carousel Card 3 -->
+        <a href="https://raymondnext.com/collections/men-formal-trousers">
+    <table class="  rounded margin bgwhite">
+      <tr>
+
+        <td class="tdsizing">
+
+          <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/12156690-bb17-4311-947a-343ba0b3b60a.png" width="180" height="180" class="rounded-top">
+        </td>
+            <tr>
+        <td class="tdsizing" align="center"><span style="font-size: 13px; color: black">
+          Upto 20% off on<br> Trousers</span>
+      </tr>
+<!--       <tr>
+        <td class="tdsizing bgwhite">
+        	<a href="https://www.srlworld.com/srlcare/active-care/Sedentary-lifestyle-package">
+          <h6 style="margin-left: 5px; margin-top: 5px; font-weight: 700; text-align:left; color:black">Active Care
+</h6>
+          <p span style="font-size: 12px;  margin-left: 5px; text-align:left; color:black"> Ideal for those living a 'Sedentary Lifestyle'.<span style="color: #0076BC"> View Details</span></p>
+        </td></a>
+      </tr> -->
+    </table></a>
+<!-- Carousel Card 3 Ends -->
+
+
+<!-- Carousel Card 1 -->
+
+
+
+
+        <a href="https://raymondnext.com/collections/men-suits-jackets">
+    <table class=" rounded margin bgwhite">
+
+      <tr>
+        <td class="tdsizing">
+          <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/e4d79f32-136f-42dc-adae-7618dfef711d.png" width="180" height="180" class="rounded-top">
+        </td>
+      </tr>
+            <tr>
+        <td class="tdsizing" align="center"><span style="font-size: 13px;">
+          Upto 20% off on <br>Suits & Jackets</span>
+      </tr>
+<!--       <tr>
+
+        <td class="tdsizing bgwhite">
+        <a href="https://www.srlworld.com/srlcare/complete-care/basic-package">        	
+          <h6  style="margin-left: 5px; margin-top: 5px; font-weight: 700; text-align: left; color:black">Complete Care</h6>
+          <p span style="font-size: 12px;  margin-left: 5px; text-align: left; color:black">For people of all age groups who want a complete health checkup.<span style="color: #0076BC"> View Details</span></p>
+        </td></a>
+      </tr> -->
+    </table></a>
+<!-- Carousel Card 1 Ends -->
+
+<!-- Carousel Card 2 -->
+<a href="https://raymondnext.com/collections/ethnix">
+    <table class="  rounded margin bgwhite">
+      <tr>
+        <td class="tdsizing">
+          <img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/8e71f716-f6cf-49b5-9e32-cd0a5264e911.png" width="180" height="180" class="rounded-top">
+        </td>
+            <tr>
+        <td class="tdsizing" align="center"><span style="font-size: 13px;">
+          Upto 25% off on<br> Ethnic Wear</span>
+        </td>
+      </tr>
+<!--       <tr>
+        <td class="tdsizing bgwhite">
+        	<a href="https://www.srlworld.com/srlcare/fitness-care/basic-checkup">
+          <h6 style="margin-left: 5px; margin-top: 5px; font-weight: 700; text-align:left; color:black" class="paddingh6">Fitness Care</h6>
+          <p span style="font-size: 12px; margin-left: 5px; text-align:left; color:black">For those who want to improve their workout and endurance.<span style="color: #0076BC"> View Details</span></p>
+        </td></a>
+      </tr> -->
+    </table></a>
+<!-- Carousel Card 2 Ends -->
+
+
+
+
+
+
+  
+    </div>
+
+
+<hr>
+<div>
+        <a href="https://raymondnext.com/"> <p style="font-size: 16px; font-weight: 700; margin-top: -5px; color: black"><i class="fas fa-arrow-right"></i> More Offers</p></a></div>
+
+
+
+
+  </div>
+    </div>
+  </div>
+
+<!-- Fourth Section Ends Here -->
+
+
+
+  <!-- Thank you for participating in contest Modal -->
+
+    <div class="modal noselect modal-ku fade" tabindex="-1" role="dialog" id="exampleModal4200">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+           <p style="text-align: center;"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/83c11a06-7769-4f01-8a36-0c341a7ca8e3.png" width="40px;"><br><br>
+           	<p style="text-align: center;">Thanks for participating in the 'Raymond Contest'. 3 Lucky winners shall be announced on 25th July, 2019 on our <a href="https://www.facebook.com/pg/MyRaymondNext/" style="color: #4267B2"><strong>Facebook</strong></a> page.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" style="margin: auto;" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- contest Modal Ends Here -->
+
+
+<!-- Section subscribe email -->
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+
+                <h6 style="font-size: 18px; font-weight: 700"><img src="https://img.icons8.com/cotton/40/000000/email-open.png" width="20px"> Sign Up For Updates!</h6>
+        <p style="font-size: 15px; margin-top: -10px; margin-bottom: 18px;">Get updates & exclusive offers in your inbox</p>
+
+  <textarea  style="min-width: 85%" id="exampleFormControlTextarea1" class="pl form-control" rows="1" placeholder=" Your Email Address"></textarea><p></p>
+  <input class="btn btn-danger" type="submit" value="Subscribe" data-toggle="modal" data-target="#exampleModal210" data-whatever="@mdo">        
+
+
+
+      </div>
+      </div>
+    </div>
+
+
+<!-- Section ends -->
+
+
+<!-- Email Subscribed  -->
+    <div class="modal noselect modal-ku fade" tabindex="-1" role="dialog" id="exampleModal210">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        <p style="text-align: center;"><i class="far fa-thumbs-up"></i><br><br>Congratulations, you have been successfully subscribed.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal" style="margin: auto;" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Email Subscribed Stop -->
+
+
+
+
+
+
+  <!-- Section 2 -->
+
+
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+          <table width="100%">
+        <tr>
+            <td style="text-align: left" width="85px;" height="85px;" ><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/e9b4a449-3cb0-4b94-b921-42c65ff3f460.jpg" width="80px"></td>
+            <td  style="text-align: left" >
+            <span style="font-weight: 900; font-size: 15px;"> You've won a Scratch Card!</span><br>
+            <span style="font-size: 15px; ">Scratch the card to<br>win exciting V-Mart vouchers</span><br>
+            <span style="color: #0076BC; font-weight: 700; font-size: 15px" data-toggle="modal" data-target="#scratchmodal" data-whatever="@mdo">View Card<i class="fas fa-chevron-circle-right"></i></span>
+            </td>
+        </tr>
+    </table>
+      </div>
+      </div>
+    </div>
+
+  <!-- Section 2 Ends Here -->
+
+
+  <!-- Section 5 Individual Blocks Including Heart, Diabetes, etc -->
+
+<!-- 
+    <div class="jumbotron jumbotron-fluid jumboone border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone">
+        <h6 style="font-size: 18px; font-weight: 700"><img src="https://gallery.mailchimp.com/29f3009acb8c7b09438efab41/images/fac5b998-f21d-4cf6-8b21-29399ba8a741.png" width="25px;"> Tests Recommended For You </h6>
+        <p style="font-size: 15px; margin-top: -10px; margin-bottom: 3px;">Based on your age, gender and history</p>
+<a href="https://www.srlworld.com/consumers/find-a-test">
+<div class="adbar-hor-small movethisup"> -->
+<!-- Carousel Card 1 -->
+<!--     <table class="border rounded margin bgwhite">
+      <tr >
+        <td>
+          <img src="srl1.png" width="100" height="100" class="rounded-top"><br>
+    
+        </td>
+      </tr>      
+    </table> -->
+<!-- Carousel Card 1 Ends -->
+
+<!-- Carousel Card 2 -->
+<!--     <table class="border  rounded margin bgwhite">
+      <tr>
+        <td >
+          <img src="SRL2.png" width="100" height="100" class="rounded-top">
+        </td>
+      </tr>
+      
+    </table> -->
+<!-- Carousel Card 2 Ends -->
+
+<!-- Carousel Card 3 -->
+<!--     <table class="border  rounded margin bgwhite">
+      <tr>
+        <td >
+          <img src="SRL3.png" width="100" height="100" class="rounded-top">
+        </td>
+      </tr>
+     
+    </table> -->
+<!-- Carousel Card 3 Ends -->
+
+
+
+
+<!-- Carousel Card 4 -->
+<!--     <table class="border rounded  margin bgwhite">
+      <tr>
+        <td >
+          <img src="SRL 4.png" width="100" height="100" class="rounded-top">
+        </td>
+      </tr>
+    
+    </table> -->
+<!-- Carousel Card 4 Ends -->
+
+
+<!-- Carousel Card 5 -->
+<!--     <table class="border  rounded margin bgwhite">
+      <tr>
+        <td >
+          <img src="SRL 5.png" width="100" height="100" class="rounded-top">
+        </td>
+      </tr>
+    
+    </table> -->
+<!-- Carousel Card 5 Ends -->
+<!--   
+    </div>
+</a>
+ -->
+
+
+
+
+
+
+
+<!-- 
+      </div>
+      </div>
+    </div> -->
+
+  <!-- Section 5 Ends Here -->
+
+
+   
+
+
+  
+
+
+
+
+ 
+
+ <!-- Section 9 -->
+
+
+   <!--  <div class="jumbotron jumbotron-fluid jumboone12 border-bottom noselect">
+      <div class="container">
+      <div class="insidejumboone"> -->
+        
+<div class="jumboone123 noselect">        
+       <table class="jumbotron jumbotron-fluid border-bottom" style="background: white; margin-top: -32px;">
+      <tr>
+        <td height="50" width="200" class="border-right" align="center">
+          <i class="fas fa-phone fa-flip-horizontal"></i> 
+          <a href="tel:1800 221 001" target="_top">
+            <span style="color: black">Call Us</span>
+        </td></a>
+        <td align="center" width="200">
+        <a href="mailto:cs@raymondnext.com?Subject=Hello" target="_top">
+          <i class="far fa-envelope"></i><span style="color: black"> Email Us</a></span>
+        </td>
+      </tr>
+    </table>
+</div>
+
+  <!-- Section 9 Ends Here -->
+
+
+  <!-- Modal Information Loyalty Points -->
+
+  <div class="modal" tabindex="-1" role="dialog" id="loyaltymodal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+<!--       <div class="modal-header">
+        <h5 class="modal-title">Earning is simple!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body">
+        <p>
+        <span style="font-weight: 700; font-size: 13px;">1.</span> For every Rs.100 spent by a Prestige customer, you earn 1 point. 1 point=Re. 0.75 when redeemed 
+        <br>
+        <span style="font-weight: 700; font-size: 13px;">2.</span> Transaction by Members who avail of discounts at
+the time of purchase  shall not be eligible for Reward Points<br>
+        <span style="font-weight: 700; font-size: 13px;">3.</span> The Reward Points will be valid for a period of 2 (two) years from the date of issuance.<br>
+        <span style="font-weight: 700; font-size: 13px;">4.</span> Other Raymond Rewards Program conditions apply<br>
+        </p>
+      </div>
+      <div class="modal-footer">
+<!--         <button type="button" class="btn btn-primary">Save changes</button> -->
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Modal Information Loyalty Points Ends Here -->
+
+
+  <!-- Thank you for giving your valuable feedback Modal -->
+
+    <div class="modal noselect modal-ku fade" tabindex="-1" role="dialog" id="exampleModal2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        <p style="text-align: center;"><i class="fas fa-thumbs-up"></i><br><br>Thanks for giving your valuable feedback.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal" style="margin: auto;" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <!-- Feedback Modal Ends Here -->
 
-     <script>
+
+
+        <button  type="button" class="btn btn-outline-danger btn-sm showbtn">Click Here</button>
+
+<div class="containerscratch colorthisdiv myimgdivshowhide" id="js-container">
+  <canvas class="canvas" id="js-canvas" width="300" height="300"></canvas>
+  <form class="form" style="visibility: hidden;">
+    <h5 style="text-align: center; margin-top: 35px;">You have won:</h5>
+    <h1 style="text-align: center">Gift Voucher Worth Rs 5000</h1>
+
+  </form>  
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+    <script  src="script.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+ $('.showbtn').click(function(){
+   $('.myimgdivshowhide').show();
+ });
+ });
+
+
 
 
 
@@ -971,11 +1221,10 @@ label.ratestars:before {
 })();
       
       
-    </script>
 
 
 
-
+</script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
