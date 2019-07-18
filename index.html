@@ -23,7 +23,7 @@
 
 <style>
 
-.containerscratch {
+.container {
   border: 3px solid yellow;
   position: relative;
   width: 300px;
@@ -384,8 +384,8 @@ label.ratestars:before {
 
   <!-- Section 1 Ends Here -->
 
-<p>Hey</p>
-<div class="containerscratch" id="js-container">
+
+<div class="container" id="js-container">
   <canvas class="canvas" id="js-canvas" width="300" height="300"></canvas>
   <form class="form" style="visibility: hidden;">
     <h2>'Allo, 'Allo!</h2>
@@ -855,27 +855,7 @@ label.ratestars:before {
     <!-- Feedback Modal Ends Here -->
 
      <script>
-      document.querySelector('.share-btn').addEventListener('click', function(){
-        console.log('clicked');
-        if (navigator.share) {
-          navigator.share({
-              title: 'Chaayos Bill',
-              text: 'Your Chaayos bill:',
-              url: 'https://wondermail.github.io/CHAAYOS/Chaayos%20Bill.pdf',
-          })
-            .then(() => console.log('Successful share'))
-            .catch((error) => console.log('Error sharing', error));
-        }
-      });
-      
-      $( function() {
 
-  var $gallery = $('.gallery').flickity({
-    cellSelector: '.gallery-cell'
-  })
-  
-});
-  
 
 
       (function() {
